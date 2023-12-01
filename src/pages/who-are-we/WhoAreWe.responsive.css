@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px) {
+  .who-are-we__banner__image {
+    width: 1670px;
+  }
+
+  .who-are-we__content__logo {
+    width: 233.6px;
+    margin-bottom: 80px;
+  }
+
+  .who-are-we__content__header {
+    font-size: 41.6px;
+    margin-bottom: 66.6px
+  }
+
+  .who-are-we__content__body {
+    max-width: 440.6px;
+    font-size: 21.3px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .who-are-we__banner__image {
+    width: 1725px;
+  }
+
+  .who-are-we__content__logo {
+    margin-bottom: 100px;
+  }
+  
+  .who-are-we__content__header {
+    font-size: 47.2px;
+    margin-bottom: 73.2px
+  }
+
+  .who-are-we__content__body {
+    max-width: 549.3px;
+    font-size: 22.1px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .who-are-we__banner__image {
+    width: 1920px;
+  }
+  
+  .who-are-we__content__logo {
+    width: 299px;
+    margin-bottom: 120px;
+  }
+  
+  .who-are-we__content__header {
+    font-size: 53px;
+    margin-bottom: 80px;  
+  }
+  
+  .who-are-we__content__body {
+    max-width: 658px;
+    font-size: 23px;
+    margin-bottom: 60px;
+  }
+}

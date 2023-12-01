@@ -1,0 +1,139 @@
+@media screen and (min-width: 768px) {
+  .header {
+    max-height: 139.3px;
+    height: 139.3px;
+  }
+
+  .header__content__logo {
+    width: 175.6px; 
+  }
+  
+  .header__content__menu > .menu > .menu__header .menu__header__side {
+    width: 26px;
+    padding: 12px;
+  }
+
+  .header__content__menu > .menu > .menu__body {
+    top: 98px;
+  }
+
+  .header__content__menu .language-selector {
+    display: none;
+  }
+  
+  .header__content__panel {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .header__content__panel .language-selector {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    max-height: 161.6px;
+    height: 161.6px;
+  }
+
+  .header__content__logo {
+    width: 200.2px;
+  }
+
+  .header__content__menu {
+    display: none;
+  }
+
+  .header__content__panel {
+    gap: 14px;
+  }
+
+  .header__content__panel .navigation-panel {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .header__content__panel .navigation-panel a,
+  .header__content__panel .navigation-panel .menu__header {
+    padding: 6px;
+  }
+
+  .header__content__panel .navigation-panel__item,
+  .header__content__panel .menu__body__item {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  .header__content__panel .navigation-panel .menu__header {
+    gap: 4px;
+  }
+
+  .header__content__panel .navigation-panel .menu__header__side {
+    width: 6px; 
+  }
+
+  .header__content__panel .navigation-panel .menu {
+    position: relative;
+  }
+
+  /* Set width to fit-content again, since the width variation is not a problem in this case. */
+  .header__content__panel .navigation-panel .menu__body {
+    background-color: var(--color-raisin-black);
+    border: 1px solid var(--color-old-burgundy);
+    border-radius: 12px;
+    top: 96px;
+    right: 0;
+    width: max-content;
+    position: absolute;
+    padding: 8px 28px;
+  }
+
+  .language-selector__item {
+    width: 28px;
+    padding: 2.25px;
+    margin: 1.5px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    max-height: 184px;
+    height: 184px;
+    font-size: 16px;
+  }
+
+  .header__content__panel .navigation-panel .menu__body {
+    top: 108px;
+    padding: 10px 30px;
+  }
+
+  .header__content__logo {
+    width: 225px;
+  }
+
+  .header__content__panel {
+    gap: 17px;
+  }
+  
+  .header__content__panel .navigation-panel {
+    gap: 20px;
+  }
+  
+  .header__content__panel .navigation-panel .menu__header {
+    gap: 5px;
+  }
+  
+  .header__content__panel .navigation-panel .menu__header__side {
+    width: 8px; 
+  }
+  
+  .language-selector__item {
+    width: 29px;    
+    padding: 1.5px;
+    margin: 1px;
+  }
+}

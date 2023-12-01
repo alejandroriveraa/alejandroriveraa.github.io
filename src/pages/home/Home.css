@@ -1,0 +1,182 @@
+.home__know-us__content__header,
+.home__our-coffee__card__content__header,
+.home__trademarks__header,
+.home__trademarks__seals .seal-content__header {
+  font-family: var(--ff-cervo-neue-medium);
+}
+
+.home__know-us__content__header__a,
+.home__know-us__content__header__b,
+.home__know-us__content__body,
+.home__our-coffee__card__content__header,
+.home__our-coffee__card__content__body,
+.home__trademarks__header, 
+.seal-content__header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__know-us__content__button,
+.home__our-coffee__card__content__button,
+.seal-content__button {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.home__know-us__content__button button,
+.home__our-coffee__card__content__button button,
+.seal-content__button button {
+  width: 100%;
+  height: 100%;
+  border-style: none;
+  border-radius: 12px;
+}
+
+/* .home__know-us */
+.home__know-us {
+  background-color: var(--color-gold-metallic);
+}
+
+.home__know-us__content__header {
+  font-size: 37px;
+  margin-bottom: 40px;
+}
+
+.home__know-us__content__header__a {
+  max-width: 238px;
+}
+
+.home__know-us__content__header__b {
+  max-width: 192px;
+}
+
+.home__know-us__content__body {
+  max-width: 353px;
+  font-size: 20.5px;
+  margin-bottom: 30px;
+}
+
+.home__know-us__content__button {
+  width: 174px;
+  height: 48px;
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+
+.home__know-us__content__button button {
+  color: white;
+  background-color: var(--color-raisin-black); 
+}
+
+.home__know-us__video {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* .home__our-coffee */
+.home__our-coffee {
+  background-color: var(--color-raisin-black);
+  overflow: hidden;
+}
+
+.home__our-coffee__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home__our-coffee__card__image {
+  width: 1256px; 
+}
+
+.home__our-coffee__card__content {
+  max-width: 353px;
+  color: white;
+  position: absolute;
+}
+
+.home__our-coffee__card__content__header {
+  font-size: 47px;
+  margin-bottom: 30px;
+}
+
+.home__our-coffee__card__content__body {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.home__our-coffee__card__content__button {
+  width: 86px;
+  height: 43px;
+  font-size: 14px;
+}
+
+/* .home__trademarks */
+.home__trademarks {
+  background-color: var(--color-raisin-black);
+}
+
+.home__trademarks__header {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.home__trademarks__brands {
+  margin-bottom: 60px;
+}
+
+.home__trademarks__brands__a,
+.home__trademarks__brands__b,
+.home__trademarks__seals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.home__trademarks__brands__a__image,
+.home__trademarks__brands__b__image {
+  width: 130px;
+}
+
+/* .home__trademarks__seals */
+.home__trademarks__seals {
+  gap: 16px;
+}
+
+.home__trademarks__seals__stc, 
+.home__trademarks__seals__scc {
+  position: relative;
+}
+
+.seal-bg-image {
+  width: 353px;
+  border-radius: 2px;
+}
+
+.seal-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.seal-content__header,
+.seal-content__button {
+  margin-bottom: 30px;
+}
+
+.seal-content__header {
+  color: white;
+  font-size: 26px;
+}
+
+.seal-content__button {
+  width: 135px;
+  height: 33px;
+  font-size: 11px;
+  font-family: var(--ff-cervo-neue-medium);
+}

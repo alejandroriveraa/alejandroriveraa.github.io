@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+  .view-more-item__image {
+    margin-bottom: 33.3px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .view-more-item__image {
+    margin-bottom: 36.6px;
+  }
+  
+  .view-more-item__header {
+    margin-bottom: 26.6px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .view-more-item {
+    width: 407px;
+  }
+
+  .view-more-item__image {
+    margin-bottom: 40px;
+  }
+  
+  .view-more-item__header {
+    font-size: 29px;
+    margin-bottom: 30px;
+  }
+
+  .view-more-item__button {
+    width: 255px;
+    height: 63px;
+    font-size: 18px;
+  }
+}

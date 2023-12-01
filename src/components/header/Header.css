@@ -1,0 +1,85 @@
+.header__content__panel,
+.header__content__panel .navigation-panel,
+.header__content__panel .language-selector {
+  display: none;
+}
+
+.header {
+  display: flex;
+  max-height: 117px;
+  height: 117px;
+  color: white;
+  background-color: var(--color-raisin-black);
+  font-family: var(--ff-cervo-neue-medium);
+  font-size: 14px;
+} 
+
+.header a {
+  color: white;
+  display: block;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.header__content__logo {
+  width: 151px;
+}
+
+.header__content__menu > .menu > .menu__header .menu__header__side {
+  width: 22px;
+  padding: 10px;
+}
+
+.header__content__menu > .menu {
+  position: relative;
+}
+
+/* Override width to avoid fit-content stretching & shrinking behavior. */
+.header__content__menu > .menu > .menu__body {
+  background-color: var(--color-raisin-black);
+  border: 1px solid var(--color-old-burgundy);
+  border-radius: 12px;
+  width: 200px; 
+  position: absolute;
+  top: 82px;
+  right: 0;
+  padding: 8px 24px;
+}
+
+.header__content__menu .navigation-panel a,
+.header__content__menu .navigation-panel .menu__header {
+  padding: 8px;
+}
+
+.header__content__menu .navigation-panel__item,
+.header__content__menu .menu__body__item {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.header__content__menu .navigation-panel .menu__header {
+  gap: 5px;
+}
+
+.header__content__menu .navigation-panel .menu__header__side {
+  width: 8px;
+}
+
+.header__content__menu .navigation-panel .menu__body {
+  position: relative;
+}
+
+.language-selector__item {
+  display: inline-block;
+  width: 27px;
+  padding: 3px;
+  margin: 2px;
+}
+
+

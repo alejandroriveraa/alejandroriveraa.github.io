@@ -1,0 +1,35 @@
+.our-coffee {
+  background-color: var(--color-raisin-black);
+  overflow: hidden;
+}
+
+.our-coffee__banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-coffee__banner__image {
+  width: 1545px;
+}
+
+.our-coffee__content__header,
+.our-coffee__content__body {
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-coffee__content__header {
+  font-size: 36px;
+  font-family: var(--ff-cervo-neue-medium);
+  margin-bottom: 50px;
+}
+
+.our-coffee__content__body {
+  max-width: 332px;
+  font-size: 20.5px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+  .our-coffee__banner__image {
+    width: 1670px;
+  }
+
+  .our-coffee__content__header {
+    font-size: 41.6px;
+    margin-bottom: 66.6px
+  }
+
+  .our-coffee__content__body {
+    max-width: 440.6px;
+    font-size: 21.3px;
+    margin-bottom: 40px;
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  .our-coffee__banner__image {
+    width: 1725px;
+  }
+
+  .our-coffee__content__header {
+    font-size: 47.2px;
+    margin-bottom: 73.2px
+  }
+
+  .our-coffee__content__body {
+    max-width: 549.3px;
+    font-size: 22.1px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .our-coffee__banner__image {
+    width: 1920px;
+  }
+  
+  .our-coffee__content__header {
+    font-size: 53px;
+    margin-bottom: 80px;
+  }
+  
+  .our-coffee__content__body {
+    max-width: 658px;
+    font-size: 23px;
+    margin-bottom: 60px;
+  }
+}

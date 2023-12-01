@@ -1,0 +1,42 @@
+.who-are-we {
+  background-color: var(--color-raisin-black);
+  overflow: hidden;
+}
+
+.who-are-we__banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-are-we__banner__image {
+  width: 1545px;
+}
+
+.who-are-we__content__logo {
+  width: 201px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.who-are-we__content__header,
+.who-are-we__content__body {
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.who-are-we__content__header {
+  font-size: 36px;
+  font-family: var(--ff-cervo-neue-medium);
+  margin-bottom: 50px;
+}
+
+.who-are-we__content__body {
+  max-width: 332px;
+  font-size: 20.5px;
+  margin-bottom: 30px;
+}

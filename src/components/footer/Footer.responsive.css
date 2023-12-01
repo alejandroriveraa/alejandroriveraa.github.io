@@ -1,0 +1,138 @@
+@media screen and (min-width: 768px) {
+  /* .footer__a */
+  .footer__a {
+    padding-top: 40px;
+    padding-bottom: 46.6px;
+  }
+
+  .footer__a__content__logo {
+    width: 435.3px;
+    margin-bottom: 80px;
+  }
+  
+  .footer__a__content__group-logo {
+    width: 134.3px;
+  }
+
+  .footer__a__content__contact {
+    font-size: 20px;
+    margin-bottom: 66.6px;
+  }
+
+  .footer__a__content__contact__body__sm {
+    gap: 8.6px;
+  }
+  
+  .footer__a__content__contact__body__sm__icon {
+    width: 27.3px;
+    padding: 3px;
+  }
+  
+  /* .footer__b */
+  .footer__b {
+    max-height: 75px;
+    height: 75px;
+  }
+
+  .footer__b__content {
+    flex-direction: initial;
+    align-items: center;
+    font-size: 11.6px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* .footer__a */
+  .footer__a {
+    padding-top: 50px;
+    padding-bottom: 53.2px;
+  }
+
+  .footer__a__content__logo {
+    width: 517.6px;
+    margin-bottom: 100px;
+  }
+
+  .footer__a__content__contact {
+    font-size: 23px;
+    margin-bottom: 73.2px;
+  }
+
+  .footer__a__content__group-logo {
+    width: 143.6px;
+  }
+  
+  .footer__a__content__contact__body {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .footer__a__content__contact__body__sm {
+    gap: 10.3px;
+    font-size: 11px; 
+  }
+  
+  .footer__a__content__contact__body__sm__icon {
+    width: 29.6px;
+  }
+  
+  /* .footer__b */
+  .footer__b {
+    max-height: 77px;
+    height: 77px;
+  }
+
+  .footer__b__content {
+    font-size: 13.3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* .footer__a */
+  .footer__a {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .footer__a__content__logo {
+    width: 600px;
+    margin-bottom: 120px;
+  }
+
+  .footer__a__content__contact {
+    font-size: 26px;
+    margin-bottom: 80px;
+  }
+
+  .footer__a__content__group-logo {
+    width: 153px;
+  }
+
+  .footer__a__content__contact__body {
+    flex-direction: initial;
+    justify-content: center;
+    gap: 120px;
+  }
+
+  .footer__a__content__contact__body__sm {
+    padding: 5px;
+    gap: 12px;
+    font-size: 16px;
+  }
+  
+  .footer__a__content__contact__body__sm__icon {
+    width: 32px;
+  }  
+
+  /* .footer__b */
+  .footer__b {
+    max-height: 78px;
+    height: 78px;
+  }
+
+  .footer__b__content {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,5 @@
+.app {
+  /* This line is meant to mitigate the effects of the thin white lines appearing around <div> elements that delimitate sections. */
+  background-color: var(--color-raisin-black);
+  font-family: var(--ff-cervo-neue-regular);
+}

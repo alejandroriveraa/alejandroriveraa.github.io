@@ -1,10 +1,104 @@
 @import "normalize.css";
 
+@font-face {
+  font-family: "Cervo Neue Light";
+  src: 
+    local("Cervo Neue Light Neue"), 
+    url("../public/fonts/CervoNeue-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cervo Neue Regular";
+  src: 
+    local("Cervo Neue Regular Neue"),  
+    url("../public/fonts/CervoNeue-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cervo Neue Medium";
+  src: 
+    local("Cervo Neue Medium Neue"),  
+    url("../public/fonts/CervoNeue-Medium.woff") format("woff");
+}
+
 :root {
-  font-family: Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --ff-cervo-neue-light: "Cervo Neue Light", Helvetica, Arial, sans-serif;
+  --ff-cervo-neue-regular: "Cervo Neue Regular", Helvetica, Arial, sans-serif;
+  --ff-cervo-neue-medium: "Cervo Neue Medium", Helvetica, Arial, sans-serif;
+
+  --color-raisin-black: #231F20;
+  --color-old-burgundy: #453129;
+  --color-deep-taupe: #7E5E55;
+  --color-gold-fusion: #8C734B;
+  --color-gold-metallic: #D7AE35; 
+  --color-persian-plum: #6C121E;
+  --color-dark-raspberry: #842748;
+  --color-red-violet: #8E2037;
+  --color-stpatricks-blue: #272F78;
+}
+
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.min-hp {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.min-vp {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.ctn {
+  max-width: 100%;
+  min-width: 425px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .min-vp {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .min-vp {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  } 
+}
+
+@media screen and (min-width: 1366px) {
+  .ctn {
+    max-width: 1366px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .min-vp {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }  
 }

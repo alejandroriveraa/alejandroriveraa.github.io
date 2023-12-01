@@ -1,0 +1,11 @@
+.view-more {
+  background-color: white;
+}
+
+.view-more__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
