@@ -1,0 +1,110 @@
+@media screen and (min-width: 768px) {
+  .brand-template__banner__image {
+      width: 1206px;
+  }
+  
+  .brand-template__content__logo {
+    width: 298.3px;
+    margin-bottom: 40px;
+  }
+
+  .brand-template__content__category {
+    font-size: 19.3px;
+    margin-bottom:80px;
+  }
+
+  .brand-template__content__video {
+    margin-bottom: 80px;
+  }
+
+  .brand-template__content__slogan {
+    max-width: initial;
+    font-size: 39px;
+    margin-bottom: 53.3px;
+  }
+
+  .brand-template__content__description {
+    max-width: 458.6px;
+    font-size: 21.3px;
+    margin-bottom: 40px;
+  }
+  
+  .brand-template__content__format {
+    font-size: 21.3px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brand-template__banner__image {
+      width: 1563.3px;
+  }
+  
+  .brand-template__content__logo {
+    width: 346.6px;
+    margin-bottom: 50px;
+  }
+
+  .brand-template__content__category {
+    font-size: 22.6px;
+    margin-bottom: 100px;
+  }
+
+  .brand-template__content__video {
+    margin-bottom: 100px;
+  }
+
+  .brand-template__content__slogan {
+    max-width: initial;
+    font-size: 42px;
+    margin-bottom: 66.6px;
+  }
+
+  .brand-template__content__description {
+    max-width: 574.3px;
+    font-size: 22.6px;
+    margin-bottom: 50px;
+  }
+  
+  .brand-template__content__format {
+    font-size: 22.6px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .brand-template__banner__image {
+      width: 1920px;
+  }
+
+  .brand-template__content__logo {
+    width: 395px;
+    margin-bottom: 60px;
+  }
+
+  .brand-template__content__category {
+    font-size: 26px;
+    margin-bottom: 120px;
+  }
+
+  .brand-template__content__video {
+    margin-bottom: 120px;
+  }
+
+  .brand-template__content__slogan {
+    max-width: initial;
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+
+  .brand-template__content__description {
+    max-width: 690px;
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+
+  .brand-template__content__format {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}

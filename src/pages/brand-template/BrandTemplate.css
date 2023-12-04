@@ -1,0 +1,61 @@
+.brand-template {
+  overflow: hidden;
+  color: white;
+}
+
+.brand-template__banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-template__banner__image {
+  width: 850px;
+}
+
+.brand-template__content__logo,
+.brand-template__content__slogan,
+.brand-template__content__description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-template__content {
+  text-align: center;
+}
+
+.brand-template__content__logo {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.brand-template__content__category {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.brand-template__content__video {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.brand-template__content__slogan {
+  max-width: 80%;
+  font-size: 36px;
+  font-family: var(--ff-cervo-neue-medium);
+  margin-bottom: 40px;
+}
+
+.brand-template__content__description {
+  max-width: 343px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.brand-template__content__format {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+

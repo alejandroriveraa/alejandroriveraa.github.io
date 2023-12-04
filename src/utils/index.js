@@ -11,13 +11,13 @@ export const SEAL_ITEMS = [
 ]
 
 export const BRAND_ITEMS = [
-  {src: "/images/asset-placeholder.svg", header: i18n.t('brands.arriero')},
-  {src: "/images/asset-placeholder.svg", header: i18n.t('brands.cohiba')},
-  {src: "/images/asset-placeholder.svg", header: i18n.t('brands.guantanamera')},
-  {src: "/images/asset-placeholder.svg", header: i18n.t('brands.montecristo')},
-  {src: "/images/asset-placeholder.svg", header: i18n.t('brands.prodigio')},
-  {src: "/images/asset-placeholder.svg", header: i18n.t('brands.serrano')},
-  {src: "/images/asset-placeholder.svg", header: i18n.t('brands.turquino')},
+  {src: "/images/item-arriero.jpg", header: i18n.t('brands.arriero')},
+  {src: "/images/item-cohiba.jpg", header: i18n.t('brands.cohiba')},
+  {src: "/images/item-guantanamera.jpg", header: i18n.t('brands.guantanamera')},
+  {src: "/images/item-montecristo.jpg", header: i18n.t('brands.montecristo')},
+  {src: "/images/item-prodigio.jpg", header: i18n.t('brands.prodigio')},
+  {src: "/images/item-serrano.jpg", header: i18n.t('brands.serrano')},
+  {src: "/images/item-turquino.jpg", header: i18n.t('brands.turquino')},
 ]
 
 export const SEAL_LINKS = [

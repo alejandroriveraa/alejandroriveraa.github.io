@@ -43,7 +43,7 @@ function Home() {
       <div className="home__our-coffee">
         <div className="home__our-coffee__card ctn">
           <div className="home__our-coffee__card__image"> 
-            <AppImage src={"/images/banner-home-our-coffee.jpg"} />
+            <AppImage src={"/images/home-our-coffee.jpg"} />
           </div>
 
           {/* Horizontal padding is putted on .(...)main__content since it has position: absolute. */}
