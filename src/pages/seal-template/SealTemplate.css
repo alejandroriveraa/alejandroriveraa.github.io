@@ -1,0 +1,34 @@
+.seal-template {
+   overflow: hidden;
+   color: white;
+}
+
+.seal-template__banner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.seal-template__banner__image {
+  width: 1545px;
+}
+
+.seal-template__content {
+   color: white;
+   text-align: center;
+}
+
+.seal-template__content__header {
+   font-size: 36px;
+   font-family: var(--ff-cervo-neue-medium);
+   margin-bottom: 60px;
+}
+
+.seal-template__content__body {
+   max-width: 332px;
+   font-size: 20.5px;   
+   margin-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto;
+}

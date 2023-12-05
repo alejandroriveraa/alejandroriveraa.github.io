@@ -24,8 +24,20 @@ function App() {
             <Route path="*" element={<InnerLayout />}>
               <Route path="who-are-we" element={<WhoAreWe />}/>
               <Route path="our-coffee" element={<OurCoffee />}/>
-              <Route path="seals/tueste-cubano" element={<SealTemplate />}/>
-              <Route path="seals/cafe-cubano" element={<SealTemplate />}/>
+              <Route path="seals/tueste-cubano" element={
+                <SealTemplate
+                banner={"/images/banner-tueste-cubano.jpg"}
+                header={t("pages.stc.header").toUpperCase()}
+                content={t("pages.stc.content")}
+                />
+              }/>
+              <Route path="seals/cafe-cubano" element={
+                <SealTemplate
+                banner={"/images/banner-cafe-cubano.jpg"}
+                header={t("pages.scc.header").toUpperCase()}
+                content={t("pages.scc.content")}
+                />
+              }/>
               <Route path="brands/cohiba" element={
                 <BrandTemplate 
                 backgroundColor={"--color-raisin-black"}

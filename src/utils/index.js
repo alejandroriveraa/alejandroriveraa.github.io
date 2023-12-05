@@ -6,8 +6,8 @@ export const LANGUAGES = [
 ]
 
 export const SEAL_ITEMS = [
-  {src: "/images/asset-placeholder.svg", header: i18n.t('seals.cafeCubano')},
-  {src: "/images/asset-placeholder.svg", header: i18n.t('seals.tuesteCubano')},
+  {src: "/images/item-cafe-cubano.jpg", header: i18n.t('seals.cafeCubano')},
+  {src: "/images/item-tueste-cubano.jpg", header: i18n.t('seals.tuesteCubano')},
 ]
 
 export const BRAND_ITEMS = [
