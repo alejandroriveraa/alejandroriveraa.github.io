@@ -32,12 +32,34 @@ i18n
           pages: {
             home: {
               carousel: {
-                header: {
-                  a: "Café",
-                  b: "Cohíba",
-                  c: "Atmosphere"
+                a: {
+                  header: {
+                    a: "Coffee",
+                    b: "Cohiba",
+                    c: "Atmosphere"
+                  },
+                  body: {
+                    a: "For stylish",
+                    b: "coffee lovers!"
+                  },
+                  button: "View More "
                 },
-                content: "For lovers of the coffee with style!",
+                b: {
+                  header: {
+                    a: "Alejandro",
+                    b: "Cuervo",
+                  },
+                  body: {
+                    a: "Embassador of the",
+                    b: "Guantanamera",
+                    c: "Coffee",
+                    d: "\"Something different\""
+                  },
+                  button: "View More"
+                },
+                c: {
+                  button: "About Us"
+                }
               },
               knowUs: {
                 header: {
@@ -159,12 +181,34 @@ i18n
           pages: {
             home: {
               carousel: {
-                header: {
-                  a: "Café",
-                  b: "Cohiba",
-                  c: "Atmosphere"
+                a: {
+                  header: {
+                    a: "Café",
+                    b: "Cohiba",
+                    c: "Atmosphere"
+                  },
+                  body: {
+                    a: "¡Para amantes del",
+                    b: "café con estilo!"
+                  },
+                  button: "Ver más"
                 },
-                content: "¡Para amantes del café con estilo!",
+                b: {
+                  header: {
+                    a: "Alejandro",
+                    b: "Cuervo",
+                  },
+                  body: {
+                    a: "Embajador del",
+                    b: "Café",
+                    c: "Guantanamera",
+                    d: "\"Algo diferente\""
+                  },
+                  button: "Ver más"
+                },
+                c: {
+                  button: "Sobre Nosotros"
+                }
               },
               knowUs: {
                 header: {

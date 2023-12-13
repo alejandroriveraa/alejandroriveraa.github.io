@@ -1,0 +1,17 @@
+.slide-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+}
+
+.slide-indicator__item { 
+  width: 6px;
+  height: 6px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+}
