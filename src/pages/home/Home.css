@@ -48,7 +48,7 @@
 }
 
 .home__know-us__content__header__b {
-  max-width: 192px;
+  max-width: 205px;
 }
 
 .home__know-us__content__body {
@@ -156,6 +156,7 @@
 .seal-bg-image {
   width: 353px;
   border-radius: 2px;
+  overflow: hidden;
 }
 
 .seal-content {
