@@ -5,6 +5,7 @@ import NavigationPanel from "../navigation-panel/NavigationPanel"
 import LanguageSelector from "../language-selector/LanguageSelector"
 import Menu from "../menu/Menu"
 import AppImage from "../app-image/AppImage"
+import ThreeLineMenu from "../three-line-menu/ThreeLineMenu"
 
 function Header() {
   return (
@@ -20,7 +21,7 @@ function Header() {
         <div className="header__content__menu">
           <Menu 
           main={null} 
-          side={<AppImage src={"/images/icon-menu-white.svg"}/>}
+          side={<ThreeLineMenu />}
           bodyItems={[<NavigationPanel />, <LanguageSelector />]}
           />
         </div>

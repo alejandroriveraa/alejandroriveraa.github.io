@@ -38,7 +38,6 @@ export const BRAND_LINKS = [
 // Randomly sorts a given array using Fisher-Yates sorting algorithm.
 // These approach have drawbacks, but it's fine for the size of the given array in this case.
 export const shuffle = (array) => {
-  console.log("shuffle items");
   for (let i = array.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1))
     let aux = array[i]
