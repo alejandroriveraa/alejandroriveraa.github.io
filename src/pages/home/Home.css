@@ -38,6 +38,10 @@
   background-color: var(--color-gold-metallic);
 }
 
+.home__know-us a {
+  color: white;
+}
+
 .home__know-us__content__header {
   font-size: 37px;
   margin-bottom: 40px;
@@ -78,6 +82,10 @@
 .home__our-coffee {
   background-color: var(--color-raisin-black);
   overflow: hidden;
+}
+
+.home__our-coffee a {
+  color: black;
 }
 
 .home__our-coffee__card {
@@ -146,6 +154,10 @@
 /* .home__trademarks__seals */
 .home__trademarks__seals {
   gap: 16px;
+}
+
+.home__trademarks__seals a {
+  color: black;
 }
 
 .home__trademarks__seals__stc, 

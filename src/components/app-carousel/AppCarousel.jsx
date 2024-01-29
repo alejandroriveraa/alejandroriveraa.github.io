@@ -6,6 +6,7 @@ import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
 import SlideIndicator from "../slide-indicator/SlideIndicator"
 import { useTranslation } from "react-i18next"
+import { NavLink } from "react-router-dom"
 
 function AppCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -49,7 +50,11 @@ function AppCarousel() {
                 <p>{t("pages.home.carousel.a.body.b")}</p>
               </div>
               <div className="slide__content__button">
-                <button>{t("pages.home.carousel.a.button").toUpperCase()}</button>
+                <button>
+                  <NavLink to="/brands/cohiba">
+                    {t("pages.home.carousel.a.button").toUpperCase()}
+                  </NavLink>
+                </button>
               </div>
             </div>
           </div>
@@ -71,7 +76,11 @@ function AppCarousel() {
                 <p>{t("pages.home.carousel.b.body.d")}</p>
               </div>
               <div className="slide__content__button">
-                <button>{t("pages.home.carousel.b.button").toUpperCase()}</button>
+                <button>
+                  <NavLink to={"/brands/guantanamera"}>
+                    {t("pages.home.carousel.b.button").toUpperCase()}
+                  </NavLink>
+                </button>
               </div>
 
             </div>
@@ -87,7 +96,11 @@ function AppCarousel() {
                 <AppImage src={"/images/logo-cubacafe.svg"}/>
               </div>
               <div className="slide__content__button">
-                <button>{t("pages.home.carousel.c.button").toUpperCase()}</button>
+                <button>
+                  <NavLink to={"/who-are-we"}>
+                    {t("pages.home.carousel.c.button").toUpperCase()}
+                  </NavLink>
+                </button>
               </div>
             </div>
           </div>

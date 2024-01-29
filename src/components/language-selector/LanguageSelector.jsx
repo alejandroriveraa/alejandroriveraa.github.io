@@ -16,7 +16,7 @@ function LanguageSelector() {
       {
         //TODO: Replace the key assignment technique, for a correct one, though it doesn't have a big impact on performance, in this case.
         LANGUAGES.map((language, index) => (
-          <div key={index} className="language-selector__item" onClick={() => setLanguage(language.code)}>
+          <div key={index} className="language-selector__item" style={{cursor: "pointer"}} onClick={() => setLanguage(language.code)}>
             <img src={language.img} alt=""/>
           </div>
         ))

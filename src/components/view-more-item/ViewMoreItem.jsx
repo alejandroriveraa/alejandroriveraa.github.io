@@ -3,8 +3,9 @@ import "./ViewMoreItem.css"
 import "./ViewMoreItem.responsive.css"
 import {useTranslation} from "react-i18next"
 import AppImage from "../app-image/AppImage"
+import { NavLink } from "react-router-dom"
 
-function ViewMoreItem({src, header}) {
+function ViewMoreItem({src, header, path}) {
   const {t} = useTranslation()
 
   return (
@@ -16,7 +17,11 @@ function ViewMoreItem({src, header}) {
         <p>{header}</p>
       </div>
       <div className="view-more-item__button">
-        <button>{t("buttons.seeMore").toUpperCase()}</button>
+        <NavLink to={path}>
+          <button>
+            {t("buttons.seeMore").toUpperCase()}
+          </button>
+        </NavLink>
       </div>
     </div>
   )

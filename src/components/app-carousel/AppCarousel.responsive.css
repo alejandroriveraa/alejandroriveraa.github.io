@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) {
+  .carousel a {
+    color: white;
+  }  
+  
   .slide {
     flex: 0 0 1286.6px;
   }
@@ -107,6 +111,10 @@
   }
 
   /* Cubacafe */
+  .cubacafe a {
+    color: black;
+  }
+
   .cubacafe .slide__content {
     display: flex;
     flex-direction: column;

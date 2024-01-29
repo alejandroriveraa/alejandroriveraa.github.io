@@ -5,6 +5,7 @@ import {useTranslation} from "react-i18next"
 import AppImage from "../../components/app-image/AppImage"
 import AppCarousel from "../../components/app-carousel/AppCarousel"
 import AppVideo from "../../components/app-video/AppVideo"
+import { NavLink } from "react-router-dom"
 
 function Home() {
   const {t} = useTranslation()
@@ -31,7 +32,11 @@ function Home() {
             <p>{t("pages.home.knowUs.content")}</p>
           </div>
           <div className="home__know-us__content__button">
-            <button>{t("buttons.knowWhoWeAre").toUpperCase()}</button>
+            <button>
+              <NavLink to="/who-are-we">
+                {t("buttons.knowWhoWeAre").toUpperCase()}
+              </NavLink>
+            </button>
           </div>
         </div>
         <div className="home__know-us__video ctn">
@@ -55,7 +60,11 @@ function Home() {
               <p>{t("pages.home.ourCoffee.content")}</p>
             </div>
             <div className="home__our-coffee__card__content__button">
-              <button>{t("buttons.readMore").toUpperCase()}</button>
+              <button>
+                <NavLink to="/our-coffee">
+                  {t("buttons.readMore").toUpperCase()}
+                </NavLink>
+              </button>
             </div>
           </div>
         </div>
@@ -113,7 +122,11 @@ function Home() {
                   <p>{t("seals.tuesteCubano").toUpperCase()}</p>
                 </div>
                 <div className="seal-content__button">
-                  <button>{t("buttons.seeMore").toUpperCase()}</button>
+                  <button>
+                    <NavLink to={"/seals/tueste-cubano"}>
+                      {t("buttons.seeMore").toUpperCase()}
+                    </NavLink>
+                  </button>
                 </div>
               </div>
             </div>
@@ -126,7 +139,11 @@ function Home() {
                   <p>{t("seals.cafeCubano").toUpperCase()}</p>
                 </div>
                 <div className="seal-content__button">
-                  <button>{t("buttons.seeMore").toUpperCase()}</button>
+                  <button>
+                    <NavLink to={"/seals/cafe-cubano"}>
+                      {t("buttons.seeMore").toUpperCase()}
+                    </NavLink>
+                  </button>
                 </div>
               </div>
             </div>

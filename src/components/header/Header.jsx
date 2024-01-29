@@ -6,13 +6,16 @@ import LanguageSelector from "../language-selector/LanguageSelector"
 import Menu from "../menu/Menu"
 import AppImage from "../app-image/AppImage"
 import ThreeLineMenu from "../three-line-menu/ThreeLineMenu"
+import { NavLink } from "react-router-dom"
 
 function Header() {
   return (
     <div className="header">
       <div className="header__content ctn min-hp">
         <div className="header__content__logo">
-          <AppImage src="/images/logo-header.svg" />
+          <NavLink to={"/"}>
+            <AppImage src="/images/logo-header.svg" />
+          </NavLink>
         </div>
         <div className="header__content__panel">
           <NavigationPanel />

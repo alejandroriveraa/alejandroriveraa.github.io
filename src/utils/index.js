@@ -6,18 +6,18 @@ export const LANGUAGES = [
 ]
 
 export const SEAL_ITEMS = [
-  {src: "/images/item-cafe-cubano.jpg", header: i18n.t('seals.cafeCubano')},
-  {src: "/images/item-tueste-cubano.jpg", header: i18n.t('seals.tuesteCubano')},
+  {src: "/images/item-cafe-cubano.jpg", header: i18n.t('seals.cafeCubano'), path: "/seals/cafe-cubano"},
+  {src: "/images/item-tueste-cubano.jpg", header: i18n.t('seals.tuesteCubano'), path: "/seals/tueste-cubano"},
 ]
 
 export const BRAND_ITEMS = [
-  {src: "/images/item-arriero.jpg", header: i18n.t('brands.arriero')},
-  {src: "/images/item-cohiba.jpg", header: i18n.t('brands.cohiba')},
-  {src: "/images/item-guantanamera.jpg", header: i18n.t('brands.guantanamera')},
-  {src: "/images/item-montecristo.jpg", header: i18n.t('brands.montecristo')},
-  {src: "/images/item-prodigio.jpg", header: i18n.t('brands.prodigio')},
-  {src: "/images/item-serrano.jpg", header: i18n.t('brands.serrano')},
-  {src: "/images/item-turquino.jpg", header: i18n.t('brands.turquino')},
+  {src: "/images/item-arriero.jpg", header: i18n.t('brands.arriero'), path: "/brands/arriero"},
+  {src: "/images/item-cohiba.jpg", header: i18n.t('brands.cohiba'), path: "/brands/cohiba"},
+  {src: "/images/item-guantanamera.jpg", header: i18n.t('brands.guantanamera'), path: "/brands/guantanamera"},
+  {src: "/images/item-montecristo.jpg", header: i18n.t('brands.montecristo'), path: "/brands/montecristo"},
+  {src: "/images/item-prodigio.jpg", header: i18n.t('brands.prodigio'), path: "/brands/prodigio"},
+  {src: "/images/item-serrano.jpg", header: i18n.t('brands.serrano'), path: "/brands/serrano"},
+  {src: "/images/item-turquino.jpg", header: i18n.t('brands.turquino'), path: "/brands/turquino"},
 ]
 
 export const SEAL_LINKS = [

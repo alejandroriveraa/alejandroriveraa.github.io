@@ -23,7 +23,7 @@ function ViewMore() {
         {
           items.map((item, index) => (
             //TODO: Replace the key assignment technique, for a correct one, though it doesn't have a big impact on performance, in this case.
-            <ViewMoreItem key={index} src={item.src} header={item.header.toUpperCase()} />
+            <ViewMoreItem key={index} src={item.src} header={item.header.toUpperCase()} path={item.path} />
           ))
        }   
       </div>
