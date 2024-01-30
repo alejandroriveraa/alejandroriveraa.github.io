@@ -11,7 +11,7 @@
 }
 
 .brand-template__banner__image {
-  width: 850px;
+  width: 781px;
 }
 
 .brand-template__content__logo,
@@ -26,36 +26,36 @@
 }
 
 .brand-template__content__logo {
-  width: 250px;
-  margin-bottom: 30px;
+  width: 201.7px;
+  margin-bottom: 20px;
 }
 
 .brand-template__content__category {
-  font-size: 16px;
-  margin-bottom: 60px;
+  font-size: 12.7px;
+  margin-bottom: 40px;
 }
 
 .brand-template__content__video {
   max-width: 100%;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .brand-template__content__slogan {
   max-width: 80%;
-  font-size: 36px;
+  font-size: 33px;
   font-family: var(--ff-cervo-neue-medium);
-  margin-bottom: 40px;
+  margin-bottom: 26.7px;
 }
 
 .brand-template__content__description {
-  max-width: 343px;
-  font-size: 20px;
-  margin-bottom: 30px;
+  max-width: 227.4px;
+  font-size: 18.7px;
+  margin-bottom: 20px;
 }
 
 .brand-template__content__format {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 18.7px;
+  margin-bottom: 10px;
 }
 

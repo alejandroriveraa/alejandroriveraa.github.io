@@ -27,42 +27,42 @@
 
 .footer__a__content__logo,
 .footer__a__content__contact {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .footer__a__content__logo {
-  width: 353px; 
+  width: 248px; 
 }
 
 .footer__a__content__group-logo {
-  width: 118px;
+  width: 102px;
 }
 
 .footer__a__content__contact {
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .footer__a__content__contact__header {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .footer__a__content__contact__body {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .footer__a__content__contact__body__sm {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  font-size: 11px; 
+  gap: 4px;
+  font-size: 10px; 
 }
 
 .footer__a__content__contact__body__sm__icon {
-  width: 25px;
-  padding: 4px;
+  width: 22.7px;
+  padding: 5px;
 }
 
 .footer__a__content__contact__body__sm__icon img {
@@ -71,8 +71,8 @@
 
 /* .footer__b */
 .footer__b {
-  max-height: 73px;
-  height: 73px;
+  max-height: 71px;
+  height: 71px;
   background-color: var(--color-raisin-black);
 }
 
@@ -81,6 +81,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 10px;
+  font-size: 9px;
   gap: 2px;
 }

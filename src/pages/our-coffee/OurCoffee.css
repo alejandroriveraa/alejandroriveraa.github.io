@@ -11,7 +11,7 @@
 }
 
 .our-coffee__banner__image {
-  width: 1545px;
+  width: 1420px;
 }
 
 .our-coffee__content__header,
@@ -23,13 +23,13 @@
 }
 
 .our-coffee__content__header {
-  font-size: 36px;
+  font-size: 30.4px;
   font-family: var(--ff-cervo-neue-medium);
-  margin-bottom: 50px;
+  margin-bottom: 33.4px;
 }
 
 .our-coffee__content__body {
-  max-width: 332px;
-  font-size: 20.5px;
+  max-width: 223.4px;
+  font-size: 19.7px;
   margin-bottom: 30px;
 }

@@ -11,7 +11,7 @@
 }
 
 .seal-template__banner__image {
-  width: 1545px;
+  width: 1420px;
 }
 
 .seal-template__content {
@@ -20,15 +20,15 @@
 }
 
 .seal-template__content__header {
-   font-size: 36px;
+   font-size: 30.4px;  
    font-family: var(--ff-cervo-neue-medium);
-   margin-bottom: 60px;
+   margin-bottom: 56px;
 }
 
 .seal-template__content__body {
-   max-width: 332px;
-   font-size: 20.5px;   
-   margin-bottom: 30px;
+   max-width: 223.4px;
+   font-size: 19.7px;
    margin-left: auto;
    margin-right: auto;
+   margin-bottom: 20px;   
 }

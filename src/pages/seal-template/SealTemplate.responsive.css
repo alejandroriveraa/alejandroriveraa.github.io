@@ -1,3 +1,20 @@
+@media screen and (min-width: 425px) {
+   .seal-template__banner__image {
+      width: 1545px;
+   }
+   
+   .seal-template__content__header {
+      font-size: 36px;
+      margin-bottom: 60px;
+   }
+
+   .seal-template__content__body {
+      max-width: 332px;
+      font-size: 20.5px;   
+      margin-bottom: 30px;
+   }
+}
+
 @media screen and (min-width: 768px) {
    .seal-template__banner__image {
       width: 1670px;

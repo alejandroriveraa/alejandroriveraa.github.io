@@ -1,3 +1,26 @@
+@media screen and (min-width: 425px) {
+  .who-are-we__banner__image {
+    width: 1545px;
+  }
+  
+  .who-are-we__content__logo {
+    width: 201px;
+    margin-bottom: 60px;
+  }
+  
+  .who-are-we__content__header {
+    font-size: 36px;
+    font-family: var(--ff-cervo-neue-medium);
+    margin-bottom: 50px;
+  }
+  
+  .who-are-we__content__body {
+    max-width: 332px;
+    font-size: 20.5px;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .who-are-we__banner__image {
     width: 1670px;

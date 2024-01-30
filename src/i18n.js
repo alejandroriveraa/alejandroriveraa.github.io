@@ -219,7 +219,7 @@ i18n
               },
               ourCoffee: {
                 header: "Nuestro Café",
-                content: "Heredera de una rica tradición que comenzó en el siglo xviii, cuando surgieron las primeras plantaciones del fruto y arribaron a la Isla miles de colonos franceses desplazados de Haití...",
+                content: "Heredera de una rica tradición que comenzó en el siglo XVII, cuando surgieron las primeras plantaciones del fruto y arribaron a la Isla miles de colonos franceses desplazados de Haití...",
               },
               brands: {
                 header: "Cubacafé y sus marcas",
@@ -232,7 +232,7 @@ i18n
             ourCoffee: {
               header: "Nuestro café",
               content: {
-                a: "Heredera de una rica tradición que comenzó en el siglo xviii, cuando surgieron las primeras plantaciones del fruto y arribaron a la Isla miles de colonos franceses desplazados de Haití, CUBACAFÉ se ha convertido hoy en ejemplo de entidad estatal cubana, mediante un proceso de producción con tecnologías de avanzada, trabajadores motivados y directivos capaces.",
+                a: "Heredera de una rica tradición que comenzó en el siglo XVII, cuando surgieron las primeras plantaciones del fruto y arribaron a la Isla miles de colonos franceses desplazados de Haití, CUBACAFÉ se ha convertido hoy en ejemplo de entidad estatal cubana, mediante un proceso de producción con tecnologías de avanzada, trabajadores motivados y directivos capaces.",
                 b: "Para dar visibilidad al café cubano, CUBACAFÉ comenzó una estrategia de diferenciación de sus marcas —basada en la relación calidad/precio—, cuyo identificador ha respaldado las producciones nacionales, especialmente las destinadas a la exportación y el turismo internacional, con sus cafés de reconocido prestigio —en las variantes tostado, molido y en grano—, bajo los sellos de origen Café Cubano y Tueste Cubano.",
                 c: "Nuestros productos están avalados por la correcta aplicación de los principios tecnológicos y de inocuidad alimentaria establecidos en las normativas legales a nivel internacional. CUBACAFÉ dispone de un sistema de gestión basado en el programa de prerrequisitos y Análisis de Peligros y Puntos Críticos de Control (HACCP), reconocido por la Oficina Nacional de Inspección Estatal.",
               },

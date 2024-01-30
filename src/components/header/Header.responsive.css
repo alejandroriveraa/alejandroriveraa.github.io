@@ -1,3 +1,27 @@
+@media screen and (min-width: 425px) {
+  .header {
+    max-height: 117px;
+    height: 117px;
+  }
+
+  .header__content__logo {
+    width: 151px;
+  }
+
+  .header__content__menu > .menu > .menu__header .menu__header__side {
+    width: 22px;
+    height: 26px;
+    padding: 10px;
+  }
+
+  /* Override width to avoid fit-content stretching & shrinking behavior. */
+  .header__content__menu > .menu > .menu__body {
+    width: 200px;
+    top: 82px;
+    padding: 8px 24px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header {
     max-height: 139.3px;

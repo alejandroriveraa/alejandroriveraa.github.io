@@ -1,3 +1,24 @@
+@media screen and (min-width: 425px) {
+  .view-more-item {
+    width: 353px;
+  }
+
+  .view-more-item__header {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .view-more-item__image {
+    margin-bottom: 30px;
+  }
+  
+  .view-more-item__button {
+    width: 157px;
+    height: 39px;
+    font-size: 12px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .view-more-item__image {
     margin-bottom: 33.3px;

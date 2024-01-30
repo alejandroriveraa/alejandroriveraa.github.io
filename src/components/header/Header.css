@@ -6,11 +6,11 @@
 
 .header {
   display: flex;
-  max-height: 117px;
-  height: 117px;
   color: white;
   background-color: var(--color-raisin-black);
   font-family: var(--ff-cervo-neue-medium);
+  max-height: 94.7px;
+  height: 94.7px;
   font-size: 14px;
 } 
 
@@ -28,13 +28,13 @@
 }
 
 .header__content__logo {
-  width: 151px;
+  width: 126.4px;
 }
 
 .header__content__menu > .menu > .menu__header .menu__header__side {
-  width: 22px;
-  height: 26px;
-  padding: 10px;
+  width: 18px;
+  height: 21px;
+  padding: 8px;
 }
 
 .header__content__menu > .menu {
@@ -46,11 +46,11 @@
   background-color: var(--color-raisin-black);
   border: 1px solid var(--color-old-burgundy);
   border-radius: 12px;
-  width: 200px; 
+  width: 180px; 
   position: absolute;
-  top: 82px;
+  top: 66px;
   right: 0;
-  padding: 8px 24px;
+  padding: 8px 18px;
 }
 
 .header__content__menu .navigation-panel a,
