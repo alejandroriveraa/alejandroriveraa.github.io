@@ -19,7 +19,8 @@ function Footer() {
               <p>{t("footer.contactUs").toUpperCase()}</p>
             </div>
             <div className="footer__a__content__contact__body">
-              <div className="footer__a__content__contact__body__item">
+              <div className="footer__a__content__contact__body__item phone">
+                <AppImage src={"/images/logo-sm-ws.png"}></AppImage>
                 <p>{t("footer.phone")}</p>
               </div>
               <div className="footer__a__content__contact__body__item">
@@ -29,15 +30,15 @@ function Footer() {
                 <div className="footer__a__content__contact__body__sm__follow">
                   <p>{t("footer.followUs")}</p>
                 </div>
-                <div className="footer__a__content__contact__body__sm__icon">
+                {/* <div className="footer__a__content__contact__body__sm__icon">
                   <AppImage src={"/images/logo-sm-facebook.svg"} />
-                </div>
+                </div> */}
                 <div className="footer__a__content__contact__body__sm__icon">
                   <AppImage src={"/images/logo-sm-instagram.svg"} />
                 </div>
-                <div className="footer__a__content__contact__body__sm__icon">
+                {/* <div className="footer__a__content__contact__body__sm__icon">
                   <AppImage src={"/images/logo-sm-twitter.svg"} />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
