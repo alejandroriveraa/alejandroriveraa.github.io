@@ -13,7 +13,7 @@ function AppCarousel() {
     {
       loop: true,
       watchDrag: false,
-      startIndex: 0,
+      startIndex: 1,
       duration: 40,
     }, 
     [
@@ -36,10 +36,13 @@ function AppCarousel() {
         <div className="carousel__container">
           {/* Cohiba */}
           <div className="slide cohiba">
-            <div className="slide__image">
+            <div className="slide__image desktop">
               <AppImage src={"/images/carousel-image-01.jpg"} />
             </div>
-            <div className="slide__content ctn min-hp">
+            <div className="slide__image mobile">
+              <AppImage src={"/images/carousel-image-01-mobile.jpg"} />
+            </div>
+            <div className="slide__content">
               <div className="slide__content__header">
                 <p>{t("pages.home.carousel.a.header.a").toUpperCase()}</p>
                 <p>{t("pages.home.carousel.a.header.b").toUpperCase()}</p>
@@ -62,7 +65,12 @@ function AppCarousel() {
           {/* Coffee Embassador */}
           <div className="slide coffee-embassador">
             <div className="slide__image">
-              <AppImage src={"/images/carousel-image-02.jpg"} />
+              <div className="slide__image desktop">
+                <AppImage src={"/images/carousel-image-02.jpg"} />
+              </div>
+              <div className="slide__image mobile">
+                <AppImage src={"/images/carousel-image-02-mobile.jpg"} />
+              </div>
             </div>
             <div className="slide__content">
               <div className="slide__content__header">
