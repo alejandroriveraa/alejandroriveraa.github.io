@@ -2,8 +2,8 @@ import React, {useState, useEffect, useRef} from "react"
 import "./Menu.css"
 import "./Menu.responsive.css"
 
-function Menu({main, side, bodyItems}) {
-  const [menuOn, setMenuOn] = useState(false)
+function Menu({main, side, bodyItems, currentMenuState, setCurrentMenuState, setOffOtherMenu}) {
+  const [menuOn, setMenuOn] = useState(currentMenuState)
   const menuRef = useRef();
 
   const setMenuOffOnClick = (e) => {
@@ -11,7 +11,8 @@ function Menu({main, side, bodyItems}) {
     // Then checks that clicked element currently exist before treating it as and outside element.
     if (menuRef.current && document.contains(e.target)) {
       if (!menuRef.current.contains(e.target)) {
-        setMenuOn(false)
+        // setMenuOn(false)
+        setCurrentMenuState(false)
      }
    }
  }
@@ -22,12 +23,14 @@ function Menu({main, side, bodyItems}) {
 
     return () => {
       window.removeEventListener("click", setMenuOffOnClick)  
-   }
+    }
  }, [])
+
   
   return (
     <div className="menu" ref={menuRef}>
-      <div className="menu__header" onClick={() => setMenuOn(!menuOn)}>
+      <div className="menu__header" onMouseEnter={() => {setOffOtherMenu(false); setCurrentMenuState(true);}} 
+      onClick={() => {setCurrentMenuState(!currentMenuState)}} >
           {
             main && (
               <div className="menu__header__main">{main}</div>
@@ -40,8 +43,8 @@ function Menu({main, side, bodyItems}) {
           }
       </div>
       {
-        menuOn && (
-          <div className="menu__body">
+        (currentMenuState) && (
+          <div className="menu__body scale-in-ver-top" onClick={() => setCurrentMenuState(false)}>
             {
               //TODO: Replace the key assignment technique, for a correct one, though it doesn't have a big impact on performance, in this case.
               bodyItems.map((item, index) => (
