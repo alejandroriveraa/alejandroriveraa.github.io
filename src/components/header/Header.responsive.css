@@ -17,7 +17,7 @@
   /* Override width to avoid fit-content stretching & shrinking behavior. */
   .header__content__menu > .menu > .menu__body {
     width: 200px;
-    top: 82px;
+    top: 84px;
     padding: 8px 24px;
   }
 }
@@ -39,7 +39,7 @@
   }
 
   .header__content__menu > .menu > .menu__body {
-    top: 98px;
+    top: 100px;
   }
 
   .header__content__menu .language-selector {
@@ -115,7 +115,7 @@
     background-color: var(--color-raisin-black);
     border: 1px solid var(--color-old-burgundy);
     border-radius: 12px;
-    top: 96px;
+    top: 94px;
     right: 0;
     width: max-content;
     position: absolute;
@@ -137,7 +137,7 @@
   }
 
   .header__content__panel .navigation-panel .menu__body {
-    top: 108px;
+    top: 106px;
     padding: 10px 30px;
   }
 

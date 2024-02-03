@@ -52,7 +52,7 @@
   border-radius: 12px;
   width: 180px; 
   position: absolute;
-  top: 66px;
+  top: 68px;
   right: 0;
   padding: 8px 18px;
 }
@@ -85,4 +85,13 @@
   width: 27px;
   padding: 3px;
   margin: 2px;
+}
+
+@media (hover: hover) {
+  .header a:hover,
+  .header .menu__header p:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
 }
