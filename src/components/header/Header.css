@@ -80,11 +80,17 @@
   position: relative;
 }
 
+.language-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+}
+
 .language-selector__item {
-  display: inline-block;
-  width: 27px;
-  padding: 3px;
-  margin: 2px;
+  width: 29px;
+  min-width: 29px;
+  box-sizing: border-box;
 }
 
 @media (hover: hover) {
@@ -93,5 +99,10 @@
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
+  }
+
+  .language-selector__item:hover {
+    border: 2px solid white;
+    border-radius: 50%;
   }
 }

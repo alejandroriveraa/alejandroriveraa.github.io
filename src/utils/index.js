@@ -1,8 +1,8 @@
 import i18n from "../i18n"
 
 export const LANGUAGES = [
-  {label: "Spanish", code: "es", img: "/images/icon-flag-es.svg"}, 
-  {label: "English", code: "en", img: "/images/icon-flag-en.svg"}
+  {label: "Spanish", code: "es", img: "/images/icon-flag-es (no border).svg"}, 
+  {label: "English", code: "en", img: "/images/icon-flag-en (no border).svg"}
 ]
 
 export const SEAL_ITEMS = [
