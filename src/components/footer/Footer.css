@@ -84,17 +84,3 @@
   font-size: 9px;
   gap: 2px;
 }
-
-.phone > * {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.phone img {
-  width: 32px;
-  height: auto;
-}
-
-.phone > p {
-  margin-left: 12px;
-}

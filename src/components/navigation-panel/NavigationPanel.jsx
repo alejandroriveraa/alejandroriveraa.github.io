@@ -9,43 +9,36 @@ import AppImage from "../app-image/AppImage";
 
 function NavigationPanel() {
   const {t} = useTranslation()
-
-  const activeLinkStyle = {
-    opacity: "50%"
-  };
-
-  const [menuAOpen, setMenuAOpen] = React.useState(false);
-  const [menuBOpen, setMenuBOpen] = React.useState(false);
+  const activeLinkStyle = {opacity: "50%"};
+  const activeLinkStyleCallback = ({isActive}) => isActive ? activeLinkStyle: null
 
   return (
     <div className="navigation-panel">
       <div className="navigation-panel__item">
-        <NavLink style={({isActive}) => isActive ? activeLinkStyle: null} to="/">{t("header.a").toUpperCase()}</NavLink>
+        <NavLink to="/" style={activeLinkStyleCallback}>
+          {t("header.a").toUpperCase()}
+        </NavLink>
       </div>
       <div className="navigation-panel__item">
-        <NavLink style={({isActive}) => isActive ? activeLinkStyle: null} to="/who-are-we">{t("header.b").toUpperCase()}</NavLink>
+        <NavLink to="/who-are-we" style={activeLinkStyleCallback}>
+          {t("header.b").toUpperCase()}
+        </NavLink>
       </div>
       <div className="navigation-panel__item">
-        <NavLink style={({isActive}) => isActive ? activeLinkStyle: null} to="/our-coffee">{t("header.c").toUpperCase()}</NavLink>
+        <NavLink to="/our-coffee" style={activeLinkStyleCallback}>
+          {t("header.c").toUpperCase()}
+        </NavLink>
       </div>
       <div className="navigation-panel__item">
-        <Menu 
-        main={<p>{t("header.d").toUpperCase()}</p>} 
+        <Menu main={<p>{t("header.d").toUpperCase()}</p>} 
         side={<AppImage src={"/images/icon-arrow-down-white.svg"}/>}
-        bodyItems={SEAL_LINKS.map(i => <NavLink to={i.to}>{i.text.toUpperCase()}</NavLink>)}
-        currentMenuState={menuAOpen}
-        setCurrentMenuState={setMenuAOpen}
-        setOffOtherMenu={setMenuBOpen}
+        bodyItems={SEAL_LINKS.map(i => <NavLink to={i.to} style={activeLinkStyleCallback}>{i.text.toUpperCase()}</NavLink>)}
         />
       </div>
       <div className="navigation-panel__item">
-        <Menu 
-        main={<p>{t("header.e").toUpperCase()}</p>} 
+        <Menu main={<p>{t("header.e").toUpperCase()}</p>} 
         side={<AppImage src={"/images/icon-arrow-down-white.svg"}/>}
-        bodyItems={BRAND_LINKS.map(i => <NavLink to={i.to}>{i.text.toUpperCase()}</NavLink>)}
-        currentMenuState={menuBOpen}
-        setCurrentMenuState={setMenuBOpen}
-        setOffOtherMenu = {setMenuAOpen}
+        bodyItems={BRAND_LINKS.map(i => <NavLink to={i.to} style={activeLinkStyleCallback}>{i.text.toUpperCase()}</NavLink>)}
         />
       </div>
     </div>

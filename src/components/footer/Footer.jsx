@@ -19,8 +19,7 @@ function Footer() {
               <p>{t("footer.contactUs").toUpperCase()}</p>
             </div>
             <div className="footer__a__content__contact__body">
-              <div className="footer__a__content__contact__body__item phone">
-                <AppImage src={"/images/logo-sm-ws.png"}></AppImage>
+              <div className="footer__a__content__contact__body__item">
                 <p>{t("footer.phone")}</p>
               </div>
               <div className="footer__a__content__contact__body__item">
