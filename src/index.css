@@ -1,24 +1,24 @@
 @import "normalize.css";
 
 @font-face {
-  font-family: "Cervo Neue Light";
+  font-family: "Cervo Neue Light Neue";
   src: 
     local("Cervo Neue Light Neue"), 
-    url("../public/fonts/CervoNeue-Light.woff") format("woff");
+    url("../public/fonts/CervoNeue-LightNeue.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Cervo Neue Regular";
+  font-family: "Cervo Neue Regular Neue";
   src: 
     local("Cervo Neue Regular Neue"),  
-    url("../public/fonts/CervoNeue-Regular.woff") format("woff");
+    url("../public/fonts/CervoNeue-RegularNeue.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Cervo Neue Medium";
+  font-family: "Cervo Neue Medium Neue";
   src: 
     local("Cervo Neue Medium Neue"),  
-    url("../public/fonts/CervoNeue-Medium.woff") format("woff");
+    url("../public/fonts/CervoNeue-MediumNeue.woff") format("woff");
 }
 
 :root {
@@ -28,9 +28,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --ff-cervo-neue-light: "Cervo Neue Light", Helvetica, Arial, sans-serif;
-  --ff-cervo-neue-regular: "Cervo Neue Regular", Helvetica, Arial, sans-serif;
-  --ff-cervo-neue-medium: "Cervo Neue Medium", Helvetica, Arial, sans-serif;
+  --ff-cervo-neue-light: "Cervo Neue Light Neue", Helvetica, Arial, sans-serif;
+  --ff-cervo-neue-regular: "Cervo Neue Regular Neue", Helvetica, Arial, sans-serif;
+  --ff-cervo-neue-medium: "Cervo Neue Medium Neue", Helvetica, Arial, sans-serif;
 
   --color-raisin-black: #231F20;
   --color-old-burgundy: #453129;
@@ -42,7 +42,6 @@
   --color-red-violet: #8E2037;
   --color-stpatricks-blue: #272F78;
 }
-
 
 p {
   margin: 0;
@@ -58,14 +57,14 @@ img, video {
   display: block;
 }
 
-.min-hp {
-  padding-left: 36px;
-  padding-right: 36px;
-}
-
 .min-vp {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.min-hp {
+  padding-left: 36px;
+  padding-right: 36px;
 }
 
 .ctn {
@@ -74,38 +73,6 @@ img, video {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-}
-
-@media screen and (min-width: 768px) {
-  .min-vp {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .min-vp {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  } 
-}
-
-@media screen and (min-width: 1366px) {
-  .ctn {
-    max-width: 1366px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .min-vp {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }  
-}
-
-.scale-in-ver-top {
-	-webkit-animation: scale-in-ver-top 0.05s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-ver-top 0.05s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ----------------------------------------------
@@ -120,6 +87,11 @@ img, video {
  * animation scale-in-ver-top
  * ----------------------------------------
  */
+.scale-in-ver-top {
+	-webkit-animation: scale-in-ver-top 0.05s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-ver-top 0.05s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
  @-webkit-keyframes scale-in-ver-top {
   0% {
     -webkit-transform: scaleY(0);
@@ -136,6 +108,7 @@ img, video {
     opacity: 1;
   }
 }
+
 @keyframes scale-in-ver-top {
   0% {
     -webkit-transform: scaleY(0);

@@ -24,7 +24,6 @@ function Menu({main, side, bodyItems}) {
       window.removeEventListener("click", setMenuOffOnClick)  
     }
  }, [])
-
   
   return (
     <div className="menu" ref={menuRef}>

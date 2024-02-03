@@ -79,19 +79,24 @@
   .header__content__panel .navigation-panel {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 26px;
   }
   
-  .header__content__panel .navigation-panel a,
-  .header__content__panel .navigation-panel .menu__header {
+  .header__content__panel a,
+  .header__content__panel .menu__header {
+    padding: 2px;
+  }
+  
+  .header__content__panel .menu__body a {
     padding: 6px;
   }
-
+  
   .header__content__panel .navigation-panel__item,
   .header__content__panel .menu__body__item {
     margin-top: 18px;
     margin-bottom: 18px;
   }
+
 
   .header__content__panel .navigation-panel .menu__header {
     gap: 4px;
@@ -145,7 +150,7 @@
   }
   
   .header__content__panel .navigation-panel {
-    gap: 20px;
+    gap: 30px;
   }
   
   .header__content__panel .navigation-panel .menu__header {

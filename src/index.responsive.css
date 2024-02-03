@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+   .min-vp {
+     padding-top: 80px;
+     padding-bottom: 80px;
+   }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+   .min-vp {
+     padding-top: 100px;
+     padding-bottom: 100px;
+   } 
+ }
+ 
+ @media screen and (min-width: 1366px) {
+   .ctn {
+     max-width: 1366px;
+   }
+ }
+ 
+ @media screen and (min-width: 1440px) {
+   .min-vp {
+     padding-top: 120px;
+     padding-bottom: 120px;
+   }  
+ }
+ 
