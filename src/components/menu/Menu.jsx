@@ -6,28 +6,37 @@ function Menu({main, side, bodyItems}) {
   const [menuOn, setMenuOn] = useState(false)
   const menuRef = useRef();
 
-  const setMenuOffOnClick = (e) => {
+  const closeMenuOnClick = (e) => {
     // Checks that menuRef exists, otherwise it wouldn't be necessary the checking.
-    // Then checks that clicked element currently exist before treating it as and outside element.
+    // Then checks that clicked element currently exist before treating it as and outside element.\
     if (menuRef.current && document.contains(e.target)) {
       if (!menuRef.current.contains(e.target)) {
         setMenuOn(false)
-     }
-   }
- }
+      }
+    }
+  }
+
+  const closeMenuOnHover = () => {
+    setMenuOn(false)
+  }
+
+  const openMenuOnHover = () => {
+    window.dispatchEvent(new Event("closeMenuOnHover"))
+    setMenuOn(true)
+  }
 
   useEffect(() => {
-    // Add event callback to manage click events like click outside a specific element.
-    window.addEventListener("click", setMenuOffOnClick)
-
+    window.addEventListener("click", closeMenuOnClick)
+    window.addEventListener("closeMenuOnHover", closeMenuOnHover)
     return () => {
-      window.removeEventListener("click", setMenuOffOnClick)  
+      window.removeEventListener("click", closeMenuOnClick) 
+      window.removeEventListener("closeMenuOnHover", closeMenuOnHover)
     }
- }, [])
+  }, [])
   
   return (
     <div className="menu" ref={menuRef}>
-      <div className="menu__header" onClick={() => {setMenuOn(!menuOn)}} >
+      <div className="menu__header" onMouseEnter={openMenuOnHover} onClick={() => setMenuOn(!menuOn)}>
           {
             main && (
               <div className="menu__header__main">{main}</div>
