@@ -2,6 +2,10 @@
   width: 281px;
 }
 
+.view-more-item a {
+  color: black;
+}
+
 .view-more-item__header {
   font-family: var(--ff-cervo-neue-medium);
   text-align: center;
