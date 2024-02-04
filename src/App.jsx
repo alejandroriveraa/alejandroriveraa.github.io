@@ -11,6 +11,7 @@ import OurCoffee from "./pages/our-coffee/OurCoffee"
 import BrandTemplate from "./pages/brand-template/BrandTemplate"
 import SealTemplate from "./pages/seal-template/SealTemplate"
 import {useTranslation} from "react-i18next"
+import ScrollTop from "./ScrollTop"
 
 function App() {
   const {t} = useTranslation()
@@ -126,6 +127,7 @@ function App() {
           </Route>
           <Route path="*" element={<NotFoundErrorPage/>}/>
         </Routes>
+        <ScrollTop />
       </BrowserRouter>
     </div>
   )
