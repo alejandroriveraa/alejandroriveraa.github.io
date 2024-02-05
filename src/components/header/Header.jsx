@@ -22,7 +22,7 @@ function Header() {
           <LanguageSelector />
         </div>
         <div className="header__content__menu">
-          <Menu 
+          <Menu
           main={null} 
           side={<ThreeLineMenu />}
           bodyItems={[<NavigationPanel />, <LanguageSelector />]}

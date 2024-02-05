@@ -16,12 +16,18 @@ function Menu({main, side, bodyItems}) {
     }
   }
 
-  const closeMenuOnHover = () => {
-    setMenuOn(false)
+  const closeMenuOnHover = (e) => {
+    if (menuRef.current) {
+      if (document.contains(e.detail.emitter)) {
+        if (!menuRef.current.contains(e.detail.emitter)) {
+          setMenuOn(false)
+        }
+      }
+    }
   }
 
   const openMenuOnHover = () => {
-    window.dispatchEvent(new Event("closeMenuOnHover"))
+    window.dispatchEvent(new CustomEvent("closeMenuOnHover", {detail: {emitter: menuRef.current}}))
     setMenuOn(true)
   }
 
