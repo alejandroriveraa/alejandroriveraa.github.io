@@ -8,16 +8,15 @@
     width: 151px;
   }
 
-  .header__content__menu > .menu > .menu__header .menu__header__side {
+  .header__content__menu > .menu > .menu__header > .menu__header__side {
     width: 22px;
     height: 26px;
     padding: 10px;
   }
 
-  /* Override width to avoid fit-content stretching & shrinking behavior. */
   .header__content__menu > .menu > .menu__body {
     width: 200px;
-    top: 84px;
+    top: 91px;
     padding: 8px 24px;
   }
 }
@@ -32,18 +31,14 @@
     width: 175.6px; 
   }
   
-  .header__content__menu > .menu > .menu__header .menu__header__side {
+  .header__content__menu > .menu > .menu__header > .menu__header__side {
     width: 26px;
     height: 31px;
     padding: 12px;
   }
 
   .header__content__menu > .menu > .menu__body {
-    top: 100px;
-  }
-
-  .header__content__menu .language-selector {
-    display: none;
+    top: 107px;
   }
   
   .header__content__panel {
@@ -53,11 +48,13 @@
     flex-grow: 1;
   }
   
+  .header__content__menu .language-selector {
+    display: none;
+  }
+  
   .header__content__panel .language-selector {
     display: flex;
-    justify-content: space-between;
-    align-items: center;  
-  }
+  } 
 }
 
 @media screen and (min-width: 1024px) {
@@ -89,38 +86,30 @@
     padding: 2px;
   }
   
-  .header__content__panel .menu__body a {
+  .header__content__panel .menu a {
     padding: 6px;
   }
   
   .header__content__panel .navigation-panel__item,
-  .header__content__panel .menu__body__item {
+  .header__content__panel .menu__body__item,
+  .header__content__panel .menu__header {
     margin-top: 18px;
     margin-bottom: 18px;
   }
 
-  .header__content__panel .navigation-panel .menu__header {
+  .header__content__panel .menu__header {
     gap: 4px;
   }
 
-  .header__content__panel .navigation-panel .menu__header__side {
+  .header__content__panel .menu__header__side {
     width: 6px; 
   }
 
-  .header__content__panel .navigation-panel .menu {
-    position: relative;
-  }
-
-  /* Set width to fit-content again, since the width variation is not a problem in this case. */
-  .header__content__panel .navigation-panel .menu__body {
-    background-color: var(--color-raisin-black);
-    border: 1px solid var(--color-old-burgundy);
-    border-radius: 12px;
-    top: 94px;
-    right: 0;
+  .header__content__panel .menu__body {
     width: max-content;
-    position: absolute;
+    top: 111px;
     padding: 8px 28px;
+    border: 1px solid var(--color-old-burgundy);
   }
 
   .language-selector {
@@ -140,8 +129,8 @@
     font-size: 16px;
   }
 
-  .header__content__panel .navigation-panel .menu__body {
-    top: 106px;
+  .header__content__panel .menu__body {
+    top: 123px;
     padding: 10px 30px;
   }
 
@@ -157,11 +146,11 @@
     gap: 30px;
   }
   
-  .header__content__panel .navigation-panel .menu__header {
+  .header__content__panel .menu__header {
     gap: 5px;
   }
   
-  .header__content__panel .navigation-panel .menu__header__side {
+  .header__content__panel .menu__header__side {
     width: 8px; 
   }
 }

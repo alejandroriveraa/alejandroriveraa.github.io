@@ -34,22 +34,25 @@
 
 .slide__content__header,
 .slide__content__body,
-.slide__content__button {
+.slide__content__link {
   font-family: var(--ff-cervo-neue-medium);
 }
 
-.slide__content__button button {
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  border-style: none;
+.cohiba .slide__content__link, 
+.coffee-embassador .slide__content__link, 
+.cubacafe .slide__content__link {
+  width: fit-content;
+  height: fit-content;
 }
 
-.cohiba .slide__content__button, 
-.coffee-embassador .slide__content__button, 
-.cubacafe .slide__content__button {
-  height: 34px;
+.cohiba .slide__content__link a, 
+.coffee-embassador .slide__content__link a, 
+.cubacafe .slide__content__link a {
+  /* Computed height of 34px */
+  padding-top: 11.3px;
+  padding-bottom: 11.3px;
   font-size: 10px;
+  border-radius: 12px;
 }
 
 /* Cohiba */
@@ -83,11 +86,10 @@
   margin-bottom: 16.6px;
 }
 
-.cohiba .slide__content__button {
-  width: 70px; 
-}
-
-.cohiba .slide__content__button button {
+.cohiba .slide__content__link a {
+  /* Computed width of 70px */
+  padding-left: 19.3px;
+  padding-right: 19.3px;
   color: white;
   background-color: var(--color-raisin-black);   
 }
@@ -127,21 +129,19 @@
   margin-bottom: 20px;
 }
 
-.coffee-embassador .slide__content__button {
+.coffee-embassador .slide__content__link {
   margin-left: auto;
-  width: 75px;
 }
 
-.coffee-embassador .slide__content__button button {
+.coffee-embassador .slide__content__link a {
+  /* Computed width of 75px */
   color: white;
+  padding-left: 21.8px;
+  padding-right: 21.8px;
   background-color: var(--color-raisin-black);
 }
 
 /* Cubacafe */
-.cubacafe a {
-  color: black;
-}
-
 .cubacafe .slide__content {
   display: flex;
   flex-direction: column;
@@ -157,7 +157,14 @@
   margin-bottom: 28px;
 }
 
-.cubacafe .slide__content__button {
-  width: 88px;
+.cubacafe .slide__content__link {
   margin-bottom: 3%;
+}
+
+.cubacafe .slide__content__link a {
+  /* Computed width of 88px */
+  color: black;
+  padding-left: 12.35px;
+  padding-right: 12.35px;
+  background-color: white;
 }

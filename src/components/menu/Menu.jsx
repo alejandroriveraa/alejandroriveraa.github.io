@@ -43,16 +43,8 @@ function Menu({main, side, bodyItems}) {
   return (
     <div className="menu" ref={menuRef}>
       <div className="menu__header" onMouseEnter={openMenuOnHover} onClick={() => setMenuOn(!menuOn)}>
-          {
-            main && (
-              <div className="menu__header__main">{main}</div>
-            )
-          } 
-          {
-            side && (
-              <div className="menu__header__side">{side}</div>
-            )
-          }
+        {main && (<div className="menu__header__main">{main}</div>)} 
+        {side && (<div className="menu__header__side">{side}</div>)}
       </div>
       {
         menuOn && (
@@ -64,7 +56,7 @@ function Menu({main, side, bodyItems}) {
                   {item}
                 </div> 
               ))
-           } 
+            } 
           </div>
           )
      }

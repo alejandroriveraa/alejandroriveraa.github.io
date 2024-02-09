@@ -16,17 +16,10 @@ function ViewMoreItem({src, header, path}) {
       <div className="view-more-item__header">
         <p>{header}</p>
       </div>
-      <div className="view-more-item__button">
-        {/* <NavLink to={path}>
-          <button>
+      <div className="view-more-item__link">
+        <NavLink to={path}>
             {t("buttons.seeMore").toUpperCase()}
-          </button>
-        </NavLink> */}
-        <button>
-          <NavLink to={path}>
-              {t("buttons.seeMore").toUpperCase()}
-          </NavLink>
-        </button>
+        </NavLink>
       </div>
     </div>
   )

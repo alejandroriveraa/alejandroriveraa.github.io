@@ -19,7 +19,7 @@ function ViewMore() {
   
   return (
     <div className="view-more min-vp">
-      <div className="view-more__items ctn min-hp">
+      <div className="view-more__items ctn">
         {
           items.map((item, index) => (
             //TODO: Replace the key assignment technique, for a correct one, though it doesn't have a big impact on performance, in this case.

@@ -49,9 +49,7 @@ p {
 
 a {
   text-decoration: none;
-  display: grid;
-  height: 100%;
-  place-content: center;
+  display: block;
 }
 
 img, video {

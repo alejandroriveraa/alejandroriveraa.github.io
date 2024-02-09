@@ -13,11 +13,11 @@ function AppCarousel() {
     {
       loop: true,
       watchDrag: false,
-      startIndex: 1,
+      startIndex: 2,
       duration: 40,
     }, 
     [
-      Autoplay({delay: 3000}),
+      // Autoplay({delay: 3000}),
     ]
   )
   const {t} = useTranslation()
@@ -52,12 +52,10 @@ function AppCarousel() {
                 <p>{t("pages.home.carousel.a.body.a")}</p>
                 <p>{t("pages.home.carousel.a.body.b")}</p>
               </div>
-              <div className="slide__content__button">
-                <button>
-                  <NavLink to="/brands/cohiba">
-                    {t("pages.home.carousel.a.button").toUpperCase()}
-                  </NavLink>
-                </button>
+              <div className="slide__content__link">
+                <NavLink to="/brands/cohiba">
+                  {t("pages.home.carousel.a.button").toUpperCase()}
+                </NavLink>
               </div>
             </div>
           </div>
@@ -83,14 +81,11 @@ function AppCarousel() {
                 <p>{t("pages.home.carousel.b.body.c")}</p>
                 <p>{t("pages.home.carousel.b.body.d")}</p>
               </div>
-              <div className="slide__content__button">
-                <button>
-                  <NavLink to={"/brands/guantanamera"}>
-                    {t("pages.home.carousel.b.button").toUpperCase()}
-                  </NavLink>
-                </button>
+              <div className="slide__content__link">
+                <NavLink to={"/brands/guantanamera"}>
+                  {t("pages.home.carousel.b.button").toUpperCase()}
+                </NavLink>
               </div>
-
             </div>
           </div>
 
@@ -103,12 +98,10 @@ function AppCarousel() {
               <div className="slide__content__logo">
                 <AppImage src={"/images/logo-cubacafe.svg"}/>
               </div>
-              <div className="slide__content__button">
-                <button>
-                  <NavLink to={"/who-are-we"}>
-                    {t("pages.home.carousel.c.button").toUpperCase()}
-                  </NavLink>
-                </button>
+              <div className="slide__content__link">
+                <NavLink to={"/who-are-we"}>
+                  {t("pages.home.carousel.c.button").toUpperCase()}
+                </NavLink>
               </div>
             </div>
           </div>

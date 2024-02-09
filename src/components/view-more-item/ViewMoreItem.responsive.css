@@ -12,9 +12,8 @@
     margin-bottom: 30px;
   }
   
-  .view-more-item__button {
-    width: 157px;
-    height: 39px;
+  .view-more-item__link a {
+    padding: 11.8px 59.45px;
     font-size: 12px;
   }
 }
@@ -49,9 +48,8 @@
     margin-bottom: 30px;
   }
 
-  .view-more-item__button {
-    width: 255px;
-    height: 63px;
+  .view-more-item__link a {
+    padding: 20.35px 99.3px;
     font-size: 18px;
   }
 }

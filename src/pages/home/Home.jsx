@@ -31,12 +31,10 @@ function Home() {
           <div className="home__know-us__content__body">
             <p>{t("pages.home.knowUs.content")}</p>
           </div>
-          <div className="home__know-us__content__button">
-            <button>
-              <NavLink to="/who-are-we">
-                {t("buttons.knowWhoWeAre").toUpperCase()}
-              </NavLink>
-            </button>
+          <div className="home__know-us__content__link">
+            <NavLink to="/who-are-we">
+              {t("buttons.knowWhoWeAre").toUpperCase()}
+            </NavLink>
           </div>
         </div>
         <div className="home__know-us__video ctn">
@@ -59,12 +57,10 @@ function Home() {
             <div className="home__our-coffee__card__content__body">
               <p>{t("pages.home.ourCoffee.content")}</p>
             </div>
-            <div className="home__our-coffee__card__content__button">
-              <button>
-                <NavLink to="/our-coffee">
-                  {t("buttons.readMore").toUpperCase()}
-                </NavLink>
-              </button>
+            <div className="home__our-coffee__card__content__link">
+              <NavLink to="/our-coffee">
+                {t("buttons.readMore").toUpperCase()}
+              </NavLink>
             </div>
           </div>
         </div>
@@ -121,12 +117,10 @@ function Home() {
                 <div className="seal-content__header">
                   <p>{t("seals.tuesteCubano").toUpperCase()}</p>
                 </div>
-                <div className="seal-content__button">
-                  <button>
-                    <NavLink to={"/seals/tueste-cubano"}>
-                      {t("buttons.seeMore").toUpperCase()}
-                    </NavLink>
-                  </button>
+                <div className="seal-content-link">
+                  <NavLink to={"/seals/tueste-cubano"}>
+                    {t("buttons.seeMore").toUpperCase()}
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -138,12 +132,10 @@ function Home() {
                 <div className="seal-content__header">
                   <p>{t("seals.cafeCubano").toUpperCase()}</p>
                 </div>
-                <div className="seal-content__button">
-                  <button>
-                    <NavLink to={"/seals/cafe-cubano"}>
-                      {t("buttons.seeMore").toUpperCase()}
-                    </NavLink>
-                  </button>
+                <div className="seal-content-link">
+                  <NavLink to={"/seals/cafe-cubano"}>
+                    {t("buttons.seeMore").toUpperCase()}
+                  </NavLink>
                 </div>
               </div>
             </div>
