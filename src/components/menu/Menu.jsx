@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useRef} from "react"
 import "./Menu.css"
-import "./Menu.responsive.css"
 
 function Menu({main, side, bodyItems}) {
   const [menuOn, setMenuOn] = useState(false)

@@ -1,6 +1,4 @@
 import React from "react"
-import "./LanguageSelector.css";
-import "./LanguageSelector.responsive.css";
 import {useTranslation} from "react-i18next";
 import {LANGUAGES} from "../../utils/index"
 

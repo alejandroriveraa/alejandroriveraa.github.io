@@ -1,6 +1,5 @@
 import React from "react"
 import "./SlideIndicator.css"
-import "./SlideIndicator.responsive.css"
 
 function SlideIndicator({slides, selectedSlide}) {
   return (

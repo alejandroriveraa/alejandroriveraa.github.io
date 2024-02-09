@@ -1,6 +1,5 @@
-import "./ThreeLineMenu.css"
-import "./ThreeLineMenu.responsive.css"
 import React from 'react'
+import "./ThreeLineMenu.css"
 
 const ThreeLineMenu = () => {
    return (

@@ -1,6 +1,4 @@
 import React from "react"
-import "./App.css"
-import "./App.responsive.css"
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import OuterLayout from "./layouts/outer-layout/OuterLayout"
 import InnerLayout from "./layouts/inner-layout/InnerLayout"
