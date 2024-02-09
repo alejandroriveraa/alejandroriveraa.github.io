@@ -17,8 +17,8 @@
 @font-face {
   font-family: "Cervo Neue Medium Neue";
   src: 
-    local("Cervo Neue Medium Neue"),  
-    url("../public/fonts/CervoNeue-MediumNeue.woff") format("woff");
+  local("Cervo Neue Medium Neue"),  
+  url("../public/fonts/CervoNeue-MediumNeue.woff") format("woff");
 }
 
 :root {
