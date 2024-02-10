@@ -8,7 +8,7 @@ const SealTemplate = ({banner, header, content}) => {
     <div className="seal-template">
         <div className="seal-template__banner">
           <div className="seal-template__banner__image">
-            <AppImage src={banner} />
+            <AppImage src={banner}/>
           </div>
         </div>
         <div className="seal-template__content ctn min-vp">

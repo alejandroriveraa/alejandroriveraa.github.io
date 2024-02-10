@@ -38,7 +38,7 @@ function Home() {
           </div>
         </div>
         <div className="home__know-us__video ctn">
-          <AppVideo videoUrl={"/videos/sample-video-compressed.mp4"} />
+          <AppVideo videoUrl={"/videos/sample-video-compressed.mp4"} thumbnail={"/images/thumbnail-cubacafe.jpg"} />
         </div>
       </div>
 

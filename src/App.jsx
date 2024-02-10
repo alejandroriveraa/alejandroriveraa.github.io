@@ -44,6 +44,7 @@ function App() {
                 logo={"/images/logo-cohiba.svg"}
                 category={t("pages.cohiba.category")}
                 video={"/videos/sample-video-compressed.mp4"}
+                videoThumbnail={"/images/thumbnail-cohiba.jpg"}
                 slogan={t("pages.cohiba.header")}
                 description={t("pages.cohiba.content")}
                 format={t("pages.cohiba.format")}
@@ -56,6 +57,7 @@ function App() {
                 logo={"/images/logo-guantanamera.svg"}
                 category={t("pages.guantanamera.category")}
                 video={"/videos/sample-video-compressed.mp4"}
+                videoThumbnail={"/images/thumbnail-guantanamera.jpg"}
                 slogan={t("pages.guantanamera.header")}
                 description={t("pages.guantanamera.content")}
                 format={t("pages.guantanamera.format")}
@@ -68,6 +70,7 @@ function App() {
                 logo={"/images/logo-montecristo.svg"}
                 category={t("pages.montecristo.category")}
                 video={"/videos/sample-video-compressed.mp4"}
+                videoThumbnail={"/images/thumbnail-montecristo.jpg"}
                 slogan={t("pages.montecristo.header")}
                 description={t("pages.montecristo.content")}
                 format={t("pages.montecristo.format")}
@@ -80,6 +83,7 @@ function App() {
                 logo={"/images/logo-serrano.svg"}
                 category={t("pages.serrano.category")}
                 video={"/videos/sample-video-compressed.mp4"}
+                videoThumbnail={"/images/thumbnail-serrano.jpg"}
                 slogan={t("pages.serrano.header")}
                 description={t("pages.serrano.content")}
                 format={t("pages.serrano.format")}
@@ -92,6 +96,7 @@ function App() {
                 logo={"/images/logo-turquino.svg"}
                 category={t("pages.turquino.category")}
                 video={"/videos/sample-video-compressed.mp4"}
+                videoThumbnail={"/images/thumbnail-turquino.jpg"}
                 slogan={t("pages.turquino.header")}
                 description={t("pages.turquino.content")}
                 format={t("pages.turquino.format")}
@@ -104,6 +109,7 @@ function App() {
                 logo={"/images/logo-arriero.svg"}
                 category={t("pages.arriero.category")}
                 video={"/videos/sample-video-compressed.mp4"}
+                videoThumbnail={"/images/thumbnail-arriero.jpg"}
                 slogan={t("pages.arriero.header")}
                 description={t("pages.arriero.content")}
                 format={t("pages.arriero.format")}
@@ -116,6 +122,7 @@ function App() {
                 logo={"/images/logo-prodigio.svg"}
                 category={t("pages.prodigio.category")}
                 video={"/videos/sample-video-compressed.mp4"}
+                videoThumbnail={"/images/thumbnail-prodigio.jpg"}
                 slogan={t("pages.prodigio.header")}
                 description={t("pages.prodigio.content")}
                 format={t("pages.prodigio.format")}

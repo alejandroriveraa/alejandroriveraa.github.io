@@ -10,6 +10,7 @@ function BrandTemplate({
   logo,
   category,
   video,
+  videoThumbnail,
   slogan,
   description,
   format
@@ -29,7 +30,7 @@ function BrandTemplate({
           <p>{category}</p>
         </div>
         <div className="brand-template__content__video">
-          <AppVideo videoUrl={video}/>
+          <AppVideo videoUrl={video} thumbnail={videoThumbnail}/>
         </div>
         <div className="brand-template__content__slogan">
           <p>{slogan}</p>
