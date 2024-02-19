@@ -20,7 +20,7 @@ const Preloader = () => {
    return (
       <div className="preloader" style={{display: "none"}}>
          {
-            IMAGE_PRELOAD.map(i => <img className="preload-image" src={i} key={i} onLoad={(e) => onload(e.target.src.replace(/^http:\/\/localhost:\d+\//, "/"))} onError={(e) => onerror(e.target.src.replace(/^http:\/\/localhost:\d+\//, "/"))}></img>
+            IMAGE_PRELOAD.map(i => <img className="preload-image" src={i} key={i} onLoad={(e) => onload(e.target.src.replace(/^https:\/\/localhost:\d+\//, "/"))} onError={(e) => onerror(e.target.src.replace(/^https:\/\/localhost:\d+\//, "/"))}></img>
             )
          }
       </div>
