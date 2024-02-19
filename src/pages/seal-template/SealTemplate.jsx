@@ -1,7 +1,7 @@
 import React from "react"
 import "./SealTemplate.css"
 import "./SealTemplate.responsive.css"
-import AppImage from '../../components/app-image/AppImage';
+import AppImage from '../../components/app-image/AppImage.jsx';
 
 const SealTemplate = ({banner, header, content}) => {
   return (
@@ -13,7 +13,7 @@ const SealTemplate = ({banner, header, content}) => {
         </div>
         <div className="seal-template__content ctn min-vp">
           <div className="seal-template__content__header">
-            <p>{header}</p>
+            <p>{header.toUpperCase()}</p>
           </div>
           <div className="seal-template__content__body">
             <p>{content}</p>

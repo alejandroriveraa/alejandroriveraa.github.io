@@ -4,6 +4,7 @@ import "./Footer.responsive.css"
 import {useTranslation} from "react-i18next"
 import AppImage from "../app-image/AppImage"
 import { NavLink } from "react-router-dom"
+import { logoFooter, logoGroup, logoInstagram } from "../../assets/images"
 
 function Footer() {
   const {t} = useTranslation()
@@ -13,7 +14,7 @@ function Footer() {
       <div className="footer__a">
         <div className="footer__a__content ctn">
           <div className="footer__a__content__logo">
-            <AppImage src={"/images/logo-footer.svg"} />
+            <AppImage src={logoFooter} />
           </div>
           <div className="footer__a__content__contact">
             <div className="footer__a__content__contact__header">
@@ -32,20 +33,20 @@ function Footer() {
                 </div>
                 <div className="footer__a__content__contact__body__sm__icon">
                   <NavLink to={"https://www.instagram.com/maestros.del.cafe.cubacafe?igsh=MWwwczJnaTI3dXUyZg=="}>
-                    <AppImage src={"/images/logo-sm-instagram.svg"} />
+                    <AppImage src={logoInstagram} />
                   </NavLink>
                 </div>
               </div>
             </div>
           </div>
           <div className="footer__a__content__group-logo">
-            <AppImage src={"/images/logo-group.svg"} />
+            <AppImage src={logoGroup} />
           </div>
         </div>
       </div>
       
       <div className="footer__b">
-        <div className="footer__b__content ctn min-hp">
+        <div className="footer__b__content ctn">
           <div className="footer__b__content__item">
             <p>{t("footer.copyright.a")}</p>
           </div>

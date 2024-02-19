@@ -1,0 +1,1 @@
+export {default as sampleVideo} from "./sample-video-compressed.mp4"

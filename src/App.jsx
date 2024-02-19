@@ -1,5 +1,5 @@
-import React from "react"
-import {BrowserRouter, Route, Routes} from "react-router-dom"
+import React, { useEffect, useState } from "react"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import OuterLayout from "./layouts/outer-layout/OuterLayout"
 import InnerLayout from "./layouts/inner-layout/InnerLayout"
 import NotFoundErrorPage from "./error-pages/not-found-error/NotFoundErrorPage"
@@ -8,14 +8,23 @@ import WhoAreWe from "./pages/who-are-we/WhoAreWe"
 import OurCoffee from "./pages/our-coffee/OurCoffee"
 import BrandTemplate from "./pages/brand-template/BrandTemplate"
 import SealTemplate from "./pages/seal-template/SealTemplate"
-import {useTranslation} from "react-i18next"
-import ScrollTop from "./ScrollTop"
+import { useTranslation } from "react-i18next"
+import ScrollTop from "./components/scroll-top/ScrollTop"
+import { bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, logoArriero, logoCohiba, logoGuantanamera, logoMontecristo, logoProdigio, logoSerrano, logoTurquino, thumbnailArriero, thumbnailCohiba, thumbnailGuantanamera, thumbnailMontecristo, thumbnailProdigio, thumbnailSerrano, thumbnailTurquino } from "./assets/images"
+import { sampleVideo } from "./assets/videos"
+import Preloader from "./components/Preloader"
 
 function App() {
   const {t} = useTranslation()
-  
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    if (window.location.pathname !== "/") window.location.href = "/"
+    window.addEventListener("preloadComplete", () => setIsLoading(false))
+  }, [])
+
   return (
-    <div className="app">
+    <div className="app" style={isLoading ? {display: "none"} : {display: "block"}}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<OuterLayout />}>
@@ -25,26 +34,26 @@ function App() {
               <Route path="our-coffee" element={<OurCoffee />}/>
               <Route path="seals/tueste-cubano" element={
                 <SealTemplate
-                banner={"/images/banner-tueste-cubano.jpg"}
-                header={t("pages.stc.header").toUpperCase()}
+                banner={bannerTuesteCubano}
+                header={t("pages.stc.header")}
                 content={t("pages.stc.content")}
                 />
               }/>
               <Route path="seals/cafe-cubano" element={
                 <SealTemplate
-                banner={"/images/banner-cafe-cubano.jpg"}
-                header={t("pages.scc.header").toUpperCase()}
+                banner={bannerCafeCubano}
+                header={t("pages.scc.header")}
                 content={t("pages.scc.content")}
                 />
               }/>
               <Route path="brands/cohiba" element={
                 <BrandTemplate 
                 backgroundColor={"--color-raisin-black"}
-                banner={"/images/banner-cohiba.jpg"}
-                logo={"/images/logo-cohiba.svg"}
+                banner={bannerCohiba}
+                logo={logoCohiba}
                 category={t("pages.cohiba.category")}
-                video={"/videos/sample-video-compressed.mp4"}
-                videoThumbnail={"/images/thumbnail-cohiba.jpg"}
+                video={sampleVideo}
+                videoThumbnail={thumbnailCohiba}
                 slogan={t("pages.cohiba.header")}
                 description={t("pages.cohiba.content")}
                 format={t("pages.cohiba.format")}
@@ -53,11 +62,11 @@ function App() {
               <Route path="brands/guantanamera" element={
                 <BrandTemplate 
                 backgroundColor={"--color-persian-plum"}
-                banner={"/images/banner-guantanamera.jpg"}
-                logo={"/images/logo-guantanamera.svg"}
+                banner={bannerGuantanamera}
+                logo={logoGuantanamera}
                 category={t("pages.guantanamera.category")}
-                video={"/videos/sample-video-compressed.mp4"}
-                videoThumbnail={"/images/thumbnail-guantanamera.jpg"}
+                video={sampleVideo}
+                videoThumbnail={thumbnailGuantanamera}
                 slogan={t("pages.guantanamera.header")}
                 description={t("pages.guantanamera.content")}
                 format={t("pages.guantanamera.format")}
@@ -66,11 +75,11 @@ function App() {
               <Route path="brands/montecristo" element={
                 <BrandTemplate
                 backgroundColor={"--color-deep-taupe"}
-                banner={"/images/banner-montecristo.jpg"}
-                logo={"/images/logo-montecristo.svg"}
+                banner={bannerMontecristo}
+                logo={logoMontecristo}
                 category={t("pages.montecristo.category")}
-                video={"/videos/sample-video-compressed.mp4"}
-                videoThumbnail={"/images/thumbnail-montecristo.jpg"}
+                video={sampleVideo}
+                videoThumbnail={thumbnailMontecristo}
                 slogan={t("pages.montecristo.header")}
                 description={t("pages.montecristo.content")}
                 format={t("pages.montecristo.format")}
@@ -79,11 +88,11 @@ function App() {
               <Route path="brands/serrano" element={
                 <BrandTemplate
                 backgroundColor={"--color-dark-raspberry"}
-                banner={"/images/banner-serrano.jpg"}
-                logo={"/images/logo-serrano.svg"}
+                banner={bannerSerrano}
+                logo={logoSerrano}
                 category={t("pages.serrano.category")}
-                video={"/videos/sample-video-compressed.mp4"}
-                videoThumbnail={"/images/thumbnail-serrano.jpg"}
+                video={sampleVideo}
+                videoThumbnail={thumbnailSerrano}
                 slogan={t("pages.serrano.header")}
                 description={t("pages.serrano.content")}
                 format={t("pages.serrano.format")}
@@ -92,11 +101,11 @@ function App() {
               <Route path="brands/turquino" element={
                 <BrandTemplate
                 backgroundColor={"--color-stpatricks-blue"}
-                banner={"/images/banner-turquino.jpg"}
-                logo={"/images/logo-turquino.svg"}
+                banner={bannerTurquino}
+                logo={logoTurquino}
                 category={t("pages.turquino.category")}
-                video={"/videos/sample-video-compressed.mp4"}
-                videoThumbnail={"/images/thumbnail-turquino.jpg"}
+                video={sampleVideo}
+                videoThumbnail={thumbnailTurquino}
                 slogan={t("pages.turquino.header")}
                 description={t("pages.turquino.content")}
                 format={t("pages.turquino.format")}
@@ -105,11 +114,11 @@ function App() {
               <Route path="brands/arriero" element={
                 <BrandTemplate
                 backgroundColor={"--color-persian-plum"}
-                banner={"/images/banner-arriero.jpg"}
-                logo={"/images/logo-arriero.svg"}
+                banner={bannerArriero}
+                logo={logoArriero}
                 category={t("pages.arriero.category")}
-                video={"/videos/sample-video-compressed.mp4"}
-                videoThumbnail={"/images/thumbnail-arriero.jpg"}
+                video={sampleVideo}
+                videoThumbnail={thumbnailArriero}
                 slogan={t("pages.arriero.header")}
                 description={t("pages.arriero.content")}
                 format={t("pages.arriero.format")}
@@ -118,11 +127,11 @@ function App() {
               <Route path="brands/prodigio" element={
                 <BrandTemplate
                 backgroundColor={"--color-old-burgundy"}
-                banner={"/images/banner-prodigio.jpg"}
-                logo={"/images/logo-prodigio.svg"}
+                banner={bannerProdigio}
+                logo={logoProdigio}
                 category={t("pages.prodigio.category")}
-                video={"/videos/sample-video-compressed.mp4"}
-                videoThumbnail={"/images/thumbnail-prodigio.jpg"}
+                video={sampleVideo}
+                videoThumbnail={thumbnailProdigio}
                 slogan={t("pages.prodigio.header")}
                 description={t("pages.prodigio.content")}
                 format={t("pages.prodigio.format")}
@@ -132,10 +141,11 @@ function App() {
           </Route>
           <Route path="*" element={<NotFoundErrorPage/>}/>
         </Routes>
-        <ScrollTop />
+        <ScrollTop/>
+        <Preloader/>
       </BrowserRouter>
     </div>
-  )
+    )
 }
 
 export default App

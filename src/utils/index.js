@@ -1,23 +1,25 @@
 import i18n from "../i18n"
+import { bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerOurCoffee, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, bannerWhoAreWe, carouselImage01, carouselImage01Mobile, carouselImage02, carouselImage02Mobile, carouselImage03, homeCafeCubano, homeOurCoffee, homeTuesteCubano, iconArrowDownWhite, iconFlagEn, iconFlagEs, itemArriero, itemCafeCubano, itemCohiba, itemGuantanamera, itemMontecristo, itemProdigio, itemSerrano, itemTuesteCubano, itemTurquino, logoArriero, logoCohiba, logoCubacafe, logoFooter, logoGroup, logoGuantanamera, logoHeader, logoInstagram, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoTurquino } from "../assets/images"
+import { sampleVideo } from "../assets/videos"
 
 export const LANGUAGES = [
-  {label: "Spanish", code: "es", img: "/images/icon-flag-es.svg"}, 
-  {label: "English", code: "en", img: "/images/icon-flag-en.svg"}
+  {label: "Spanish", code: "es", img: iconFlagEs}, 
+  {label: "English", code: "en", img: iconFlagEn}
 ]
 
 export const SEAL_ITEMS = [
-  {src: "/images/item-cafe-cubano.jpg", header: i18n.t('seals.cafeCubano'), path: "/seals/cafe-cubano"},
-  {src: "/images/item-tueste-cubano.jpg", header: i18n.t('seals.tuesteCubano'), path: "/seals/tueste-cubano"},
+  {src: itemCafeCubano, header: i18n.t('seals.cafeCubano'), path: "/seals/cafe-cubano"},
+  {src: itemTuesteCubano, header: i18n.t('seals.tuesteCubano'), path: "/seals/tueste-cubano"},
 ]
 
 export const BRAND_ITEMS = [
-  {src: "/images/item-arriero.jpg", header: i18n.t('brands.arriero'), path: "/brands/arriero"},
-  {src: "/images/item-cohiba.jpg", header: i18n.t('brands.cohiba'), path: "/brands/cohiba"},
-  {src: "/images/item-guantanamera.jpg", header: i18n.t('brands.guantanamera'), path: "/brands/guantanamera"},
-  {src: "/images/item-montecristo.jpg", header: i18n.t('brands.montecristo'), path: "/brands/montecristo"},
-  {src: "/images/item-prodigio.jpg", header: i18n.t('brands.prodigio'), path: "/brands/prodigio"},
-  {src: "/images/item-serrano.jpg", header: i18n.t('brands.serrano'), path: "/brands/serrano"},
-  {src: "/images/item-turquino.jpg", header: i18n.t('brands.turquino'), path: "/brands/turquino"},
+  {src: itemArriero, header: i18n.t('brands.arriero'), path: "/brands/arriero"},
+  {src: itemCohiba, header: i18n.t('brands.cohiba'), path: "/brands/cohiba"},
+  {src: itemGuantanamera, header: i18n.t('brands.guantanamera'), path: "/brands/guantanamera"},
+  {src: itemMontecristo, header: i18n.t('brands.montecristo'), path: "/brands/montecristo"},
+  {src: itemProdigio, header: i18n.t('brands.prodigio'), path: "/brands/prodigio"},
+  {src: itemSerrano, header: i18n.t('brands.serrano'), path: "/brands/serrano"},
+  {src: itemTurquino, header: i18n.t('brands.turquino'), path: "/brands/turquino"},
 ]
 
 export const SEAL_LINKS = [
@@ -33,6 +35,54 @@ export const BRAND_LINKS = [
   {to: "/brands/turquino", text: i18n.t("brands.turquino")},
   {to: "/brands/arriero", text: i18n.t("brands.arriero")},
   {to: "/brands/prodigio", text: i18n.t("brands.prodigio")},
+]
+
+export const IMAGE_PRELOAD = [
+  iconArrowDownWhite,
+  iconFlagEn,
+  iconFlagEs,
+  logoArriero,
+  logoCohiba,
+  logoCubacafe,
+  logoFooter,
+  logoGroup,
+  logoGuantanamera,
+  logoHeader,
+  logoIslaGrande,
+  logoMontecristo,
+  logoProdigio,
+  logoRegil,
+  logoSerrano,
+  logoInstagram,
+  logoTurquino,
+  carouselImage01Mobile,
+  carouselImage01,
+  carouselImage02Mobile,
+  carouselImage02,
+  carouselImage03,
+  homeCafeCubano,
+  homeOurCoffee,
+  homeTuesteCubano,
+  bannerArriero,
+  bannerCafeCubano,
+  bannerCohiba,
+  bannerGuantanamera,
+  bannerMontecristo,
+  bannerOurCoffee,
+  bannerProdigio,
+  bannerSerrano,
+  bannerTuesteCubano,
+  bannerTurquino,
+  bannerWhoAreWe,
+  itemArriero,
+  itemCafeCubano,
+  itemCohiba,
+  itemGuantanamera,
+  itemMontecristo,
+  itemProdigio,
+  itemSerrano,
+  itemTuesteCubano,
+  itemTurquino
 ]
 
 // Randomly sorts a given array using Fisher-Yates sorting algorithm.

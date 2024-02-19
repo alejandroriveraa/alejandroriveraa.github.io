@@ -7,14 +7,15 @@ import Menu from "../menu/Menu"
 import AppImage from "../app-image/AppImage"
 import ThreeLineMenu from "../three-line-menu/ThreeLineMenu"
 import { NavLink } from "react-router-dom"
+import { logoHeader } from "../../assets/images"
 
 function Header() {
   return (
     <div className="header">
-      <div className="header__content ctn min-hp">
+      <div className="header__content ctn">
         <div className="header__content__logo">
           <NavLink to={"/"}>
-            <AppImage src="/images/logo-header.svg" />
+            <AppImage src={logoHeader} />
           </NavLink>
         </div>
         <div className="header__content__panel">

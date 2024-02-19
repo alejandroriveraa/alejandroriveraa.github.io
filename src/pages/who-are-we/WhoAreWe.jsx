@@ -1,8 +1,9 @@
 import React from "react"
 import "./WhoAreWe.css"
 import "./WhoAreWe.responsive.css"
-import {useTranslation} from "react-i18next"
+import { useTranslation } from "react-i18next"
 import AppImage from "../../components/app-image/AppImage"
+import { bannerWhoAreWe, logoCubacafe } from "../../assets/images"
 
 function WhoAreWe() {
   const {t} = useTranslation()
@@ -11,12 +12,12 @@ function WhoAreWe() {
     <div className="who-are-we">
         <div className="who-are-we__banner ctn">
           <div className="who-are-we__banner__image">
-            <AppImage src={"/images/banner-who-are-we.jpg"}/>
+            <AppImage src={bannerWhoAreWe}/>
           </div>
         </div>
-        <div className="who-are-we__content ctn min-hp min-vp">
+        <div className="who-are-we__content ctn min-vp">
           <div className="who-are-we__content__logo">
-            <AppImage src={"/images/logo-cubacafe.svg"}/>
+            <AppImage src={logoCubacafe}/>
           </div>
           <div className="who-are-we__content__header">
             <p>{t("pages.whoAreWe.header").toUpperCase()}</p>

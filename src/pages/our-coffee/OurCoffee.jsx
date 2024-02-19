@@ -3,6 +3,7 @@ import "./OurCoffee.css"
 import "./OurCoffee.responsive.css"
 import { useTranslation } from "react-i18next"
 import AppImage from "../../components/app-image/AppImage";
+import { bannerOurCoffee } from "../../assets/images";
 
 function OurCoffee() {
   const {t} = useTranslation()
@@ -11,10 +12,10 @@ function OurCoffee() {
     <div className="our-coffee">
         <div className="our-coffee__banner ctn">
           <div className="our-coffee__banner__image">
-            <AppImage src="/images/banner-our-coffee.jpg" />
+            <AppImage src={bannerOurCoffee} />
           </div>
         </div>
-        <div className="our-coffee__content ctn min-hp min-vp">
+        <div className="our-coffee__content ctn min-vp">
           <div className="our-coffee__content__header">
             <p>{t("pages.ourCoffee.header").toUpperCase()}</p>
           </div>

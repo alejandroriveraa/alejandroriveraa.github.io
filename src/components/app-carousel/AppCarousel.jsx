@@ -7,6 +7,8 @@ import Autoplay from "embla-carousel-autoplay"
 import SlideIndicator from "../slide-indicator/SlideIndicator"
 import { useTranslation } from "react-i18next"
 import { NavLink } from "react-router-dom"
+import { carouselImage01, carouselImage01Mobile, carouselImage02, carouselImage02Mobile, carouselImage03, logoCubacafe } from "../../assets/images"
+
 
 function AppCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -37,10 +39,10 @@ function AppCarousel() {
           {/* Cohiba */}
           <div className="slide cohiba">
             <div className="slide__image desktop">
-              <AppImage src={"/images/carousel-image-01.jpg"} />
+              <AppImage src={carouselImage01} />
             </div>
             <div className="slide__image mobile">
-              <AppImage src={"/images/carousel-image-01-mobile.jpg"} />
+              <AppImage src={carouselImage01Mobile} />
             </div>
             <div className="slide__content">
               <div className="slide__content__header">
@@ -64,10 +66,10 @@ function AppCarousel() {
           <div className="slide coffee-embassador">
             <div className="slide__image">
               <div className="slide__image desktop">
-                <AppImage src={"/images/carousel-image-02.jpg"} />
+                <AppImage src={carouselImage02} />
               </div>
               <div className="slide__image mobile">
-                <AppImage src={"/images/carousel-image-02-mobile.jpg"} />
+                <AppImage src={carouselImage02Mobile} />
               </div>
             </div>
             <div className="slide__content">
@@ -92,11 +94,11 @@ function AppCarousel() {
           {/* Cubacafe */}
           <div className="slide cubacafe">
             <div className="slide__image">
-              <AppImage src={"/images/carousel-image-03.jpg"} />
+              <AppImage src={carouselImage03} />
             </div>
             <div className="slide__content">
               <div className="slide__content__logo">
-                <AppImage src={"/images/logo-cubacafe.svg"}/>
+                <AppImage src={logoCubacafe}/>
               </div>
               <div className="slide__content__link">
                 <NavLink to={"/who-are-we"}>

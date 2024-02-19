@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {BRAND_LINKS, SEAL_LINKS} from "../../utils";
 import AppImage from "../app-image/AppImage";
+import { iconArrowDownWhite } from "../../assets/images";
 
 function NavigationPanel() {
   const {t} = useTranslation()
@@ -29,12 +30,12 @@ function NavigationPanel() {
       </div>
       <Menu 
       main={<p>{t("header.d").toUpperCase()}</p>} 
-      side={<AppImage src={"/images/icon-arrow-down-white.svg"}/>} 
+      side={<AppImage src={iconArrowDownWhite}/>} 
       bodyItems={SEAL_LINKS.map(i => <NavLink to={i.to} style={activeLinkStyleCallback}>{i.text.toUpperCase()}</NavLink>)}
       />
       <Menu 
       main={<p>{t("header.e").toUpperCase()}</p>} 
-      side={<AppImage src={"/images/icon-arrow-down-white.svg"}/>}
+      side={<AppImage src={iconArrowDownWhite}/>}
       bodyItems={BRAND_LINKS.map(i => <NavLink to={i.to} style={activeLinkStyleCallback}>{i.text.toUpperCase()}</NavLink>)}
       />
     </div>

@@ -3,7 +3,7 @@ import React from "react"
 function AppImage({src}) {
   return (
     <>
-      <img src={src} alt="" />
+      <img src={src} alt=""/>
     </>
   )
 }

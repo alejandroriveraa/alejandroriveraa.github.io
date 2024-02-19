@@ -6,6 +6,8 @@ import AppImage from "../../components/app-image/AppImage"
 import AppCarousel from "../../components/app-carousel/AppCarousel"
 import AppVideo from "../../components/app-video/AppVideo"
 import { NavLink } from "react-router-dom"
+import { homeCafeCubano, homeOurCoffee, homeTuesteCubano, logoArriero, logoCohiba, logoGuantanamera, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoTurquino, thumbnailCubacafe } from "../../assets/images"
+import { sampleVideo } from "../../assets/videos"
 
 function Home() {
   const {t} = useTranslation()
@@ -19,7 +21,7 @@ function Home() {
 
       {/* know-us */}
       <div className="home__know-us min-vp">
-        <div className="home__know-us__content ctn min-hp">
+        <div className="home__know-us__content ctn">
           <div className="home__know-us__content__header">
             <div className="home__know-us__content__header__a">
               <p>{t("pages.home.knowUs.header.a")}</p>
@@ -38,7 +40,7 @@ function Home() {
           </div>
         </div>
         <div className="home__know-us__video ctn">
-          <AppVideo videoUrl={"/videos/sample-video-compressed.mp4"} thumbnail={"/images/thumbnail-cubacafe.jpg"} />
+          <AppVideo videoUrl={sampleVideo} thumbnail={thumbnailCubacafe} />
         </div>
       </div>
 
@@ -46,11 +48,11 @@ function Home() {
       <div className="home__our-coffee">
         <div className="home__our-coffee__card ctn">
           <div className="home__our-coffee__card__image"> 
-            <AppImage src={"/images/home-our-coffee.jpg"} />
+            <AppImage src={homeOurCoffee} />
           </div>
 
           {/* Horizontal padding is putted on .(...)main__content since it has position: absolute. */}
-          <div className="home__our-coffee__card__content min-hp">
+          <div className="home__our-coffee__card__content">
             <div className="home__our-coffee__card__content__header">
               <p>{t("pages.home.ourCoffee.header").toUpperCase()}</p>
             </div>
@@ -76,33 +78,33 @@ function Home() {
         <div className="home__trademarks__brands ctn">
           <div className="home__trademarks__brands__a">
             <div className="home__trademarks__brands__a__image">
-              <AppImage src="/images/logo-cohiba.svg" />
+              <AppImage src={logoCohiba} />
             </div>
             <div className="home__trademarks__brands__a__image">
-              <AppImage src="/images/logo-montecristo.svg" />
+              <AppImage src={logoMontecristo} />
             </div>
             <div className="home__trademarks__brands__a__image">
-              <AppImage src="/images/logo-guantanamera.svg" />
+              <AppImage src={logoGuantanamera} />
             </div>
           </div>
           <div className="home__trademarks__brands__b">
             <div className="home__trademarks__brands__b__image">
-              <AppImage src="/images/logo-serrano.svg" />
+              <AppImage src={logoSerrano} />
             </div>
             <div className="home__trademarks__brands__b__image">
-              <AppImage src="/images/logo-turquino.svg" />
+              <AppImage src={logoTurquino} />
             </div>
             <div className="home__trademarks__brands__b__image">
-              <AppImage src="/images/logo-arriero.svg" />
+              <AppImage src={logoArriero} />
             </div>
             <div className="home__trademarks__brands__b__image">
-              <AppImage src="/images/logo-isla-grande.svg" />
+              <AppImage src={logoIslaGrande} />
             </div>
             <div className="home__trademarks__brands__b__image">
-              <AppImage src="/images/logo-regil.svg" />
+              <AppImage src={logoRegil} />
             </div>
             <div className="home__trademarks__brands__b__image">
-              <AppImage src="/images/logo-prodigio.svg" />
+              <AppImage src={logoProdigio} />
             </div>
           </div>
         </div>
@@ -111,7 +113,7 @@ function Home() {
         <div className="home__trademarks__seals ctn">
             <div className="home__trademarks__seals__stc">
               <div className="seal-bg-image">
-                <AppImage src="/images/home-tueste-cubano.jpg" />
+                <AppImage src={homeTuesteCubano} />
               </div>
               <div className="seal-content">
                 <div className="seal-content__header">
@@ -126,7 +128,7 @@ function Home() {
             </div>
             <div className="home__trademarks__seals__scc">
               <div className="seal-bg-image">
-                <AppImage src="/images/home-cafe-cubano.jpg" />
+                <AppImage src={homeCafeCubano} />
               </div>
               <div className="seal-content">
                 <div className="seal-content__header">
