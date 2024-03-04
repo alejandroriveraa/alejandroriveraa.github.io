@@ -6,8 +6,9 @@ import AppImage from "../../components/app-image/AppImage"
 import AppCarousel from "../../components/app-carousel/AppCarousel"
 import AppVideo from "../../components/app-video/AppVideo"
 import { NavLink } from "react-router-dom"
-import { homeCafeCubano, homeOurCoffee, homeTuesteCubano, logoArriero, logoCohiba, logoGuantanamera, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoTurquino, thumbnailCubacafe } from "../../assets/images"
-import { sampleVideo } from "../../assets/videos"
+import { images } from "../../assets/images"
+const { homeCafeCubano, homeOurCoffee, homeTuesteCubano, logoArriero, logoCohiba, logoGuantanamera, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoTurquino, thumbnailCubacafe } = images
+import { cubacafeVideo } from "../../assets/videos/index.desktop"
 
 function Home() {
   const {t} = useTranslation()
@@ -40,7 +41,7 @@ function Home() {
           </div>
         </div>
         <div className="home__know-us__video ctn">
-          <AppVideo videoUrl={sampleVideo} thumbnail={thumbnailCubacafe} />
+          <AppVideo videoUrl={cubacafeVideo} thumbnail={thumbnailCubacafe} />
         </div>
       </div>
 

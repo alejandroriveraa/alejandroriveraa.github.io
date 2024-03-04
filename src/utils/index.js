@@ -1,6 +1,7 @@
 import i18n from "../i18n"
-import { bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerOurCoffee, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, bannerWhoAreWe, carouselImage01, carouselImage01Mobile, carouselImage02, carouselImage02Mobile, carouselImage03, homeCafeCubano, homeOurCoffee, homeTuesteCubano, iconArrowDownWhite, iconFlagEn, iconFlagEs, itemArriero, itemCafeCubano, itemCohiba, itemGuantanamera, itemMontecristo, itemProdigio, itemSerrano, itemTuesteCubano, itemTurquino, logoArriero, logoCohiba, logoCubacafe, logoFooter, logoGroup, logoGuantanamera, logoHeader, logoInstagram, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoTurquino } from "../assets/images"
-import { sampleVideo } from "../assets/videos"
+import {images} from '../assets/images'
+
+const { bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerOurCoffee, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, bannerWhoAreWe, carouselImage01, carouselImage02, carouselImage03, homeOurCoffee, homeTuesteCubano, homeCafeCubano, itemArriero, itemCafeCubano, itemCohiba, itemGuantanamera, itemMontecristo, itemProdigio, itemSerrano, itemTuesteCubano, itemTurquino, iconArrowDownWhite, iconFlagEn, iconFlagEs, logoArriero, logoCohiba, logoCubacafe, logoFooter, logoGroup, logoGuantanamera, logoHeader, logoInstagram, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoTurquino } = images
 
 export const LANGUAGES = [
   {label: "Spanish", code: "es", img: iconFlagEs}, 
@@ -37,53 +38,7 @@ export const BRAND_LINKS = [
   {to: "/brands/prodigio", text: i18n.t("brands.prodigio")},
 ]
 
-export const IMAGE_PRELOAD = [
-  iconArrowDownWhite,
-  iconFlagEn,
-  iconFlagEs,
-  logoArriero,
-  logoCohiba,
-  logoCubacafe,
-  logoFooter,
-  logoGroup,
-  logoGuantanamera,
-  logoHeader,
-  logoIslaGrande,
-  logoMontecristo,
-  logoProdigio,
-  logoRegil,
-  logoSerrano,
-  logoInstagram,
-  logoTurquino,
-  carouselImage01Mobile,
-  carouselImage01,
-  carouselImage02Mobile,
-  carouselImage02,
-  carouselImage03,
-  homeCafeCubano,
-  homeOurCoffee,
-  homeTuesteCubano,
-  bannerArriero,
-  bannerCafeCubano,
-  bannerCohiba,
-  bannerGuantanamera,
-  bannerMontecristo,
-  bannerOurCoffee,
-  bannerProdigio,
-  bannerSerrano,
-  bannerTuesteCubano,
-  bannerTurquino,
-  bannerWhoAreWe,
-  itemArriero,
-  itemCafeCubano,
-  itemCohiba,
-  itemGuantanamera,
-  itemMontecristo,
-  itemProdigio,
-  itemSerrano,
-  itemTuesteCubano,
-  itemTurquino
-]
+export const IMAGE_PRELOAD = [iconArrowDownWhite, iconFlagEn, iconFlagEs, logoArriero, logoCohiba, logoCubacafe, logoFooter, logoGroup, logoGuantanamera, logoHeader, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoInstagram, logoTurquino, carouselImage01, carouselImage02, carouselImage03, homeCafeCubano, homeOurCoffee, homeTuesteCubano, bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerOurCoffee, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, bannerWhoAreWe, itemArriero, itemCafeCubano, itemCohiba, itemGuantanamera, itemMontecristo, itemProdigio, itemSerrano, itemTuesteCubano, itemTurquino]
 
 // Randomly sorts a given array using Fisher-Yates sorting algorithm.
 // These approach have drawbacks, but it's fine for the size of the given array in this case.

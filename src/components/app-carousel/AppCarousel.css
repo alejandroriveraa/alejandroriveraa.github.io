@@ -24,9 +24,9 @@
   width: 100%;
 }
 
-.slide__image.desktop {
+/* .slide__image.desktop {
   display: none;
-}
+} */
 
 .slide__content {
   position: absolute;

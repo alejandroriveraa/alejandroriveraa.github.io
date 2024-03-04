@@ -7,7 +7,8 @@ import Autoplay from "embla-carousel-autoplay"
 import SlideIndicator from "../slide-indicator/SlideIndicator"
 import { useTranslation } from "react-i18next"
 import { NavLink } from "react-router-dom"
-import { carouselImage01, carouselImage01Mobile, carouselImage02, carouselImage02Mobile, carouselImage03, logoCubacafe } from "../../assets/images"
+import { images } from "../../assets/images"
+const { carouselImage01, carouselImage02, carouselImage03, logoCubacafe } = images
 
 
 function AppCarousel() {
@@ -38,12 +39,12 @@ function AppCarousel() {
         <div className="carousel__container">
           {/* Cohiba */}
           <div className="slide cohiba">
-            <div className="slide__image desktop">
+            <div className="slide__image">
               <AppImage src={carouselImage01} />
             </div>
-            <div className="slide__image mobile">
-              <AppImage src={carouselImage01Mobile} />
-            </div>
+            {/* <div className="slide__image mobile">
+              <AppImage src={carouselImage01} />
+            </div> */}
             <div className="slide__content">
               <div className="slide__content__header">
                 <p>{t("pages.home.carousel.a.header.a").toUpperCase()}</p>
@@ -65,13 +66,11 @@ function AppCarousel() {
           {/* Coffee Embassador */}
           <div className="slide coffee-embassador">
             <div className="slide__image">
-              <div className="slide__image desktop">
-                <AppImage src={carouselImage02} />
-              </div>
-              <div className="slide__image mobile">
-                <AppImage src={carouselImage02Mobile} />
-              </div>
+              <AppImage src={carouselImage02} />
             </div>
+            {/* <div className="slide__image mobile">
+              <AppImage src={carouselImage02} />
+            </div> */}
             <div className="slide__content">
               <div className="slide__content__header">
                 <p>{t("pages.home.carousel.b.header.a").toUpperCase()}</p>

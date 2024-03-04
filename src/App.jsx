@@ -10,17 +10,18 @@ import BrandTemplate from "./pages/brand-template/BrandTemplate"
 import SealTemplate from "./pages/seal-template/SealTemplate"
 import { useTranslation } from "react-i18next"
 import ScrollTop from "./components/scroll-top/ScrollTop"
-import { bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, logoArriero, logoCohiba, logoGuantanamera, logoMontecristo, logoProdigio, logoSerrano, logoTurquino, thumbnailArriero, thumbnailCohiba, thumbnailGuantanamera, thumbnailMontecristo, thumbnailProdigio, thumbnailSerrano, thumbnailTurquino } from "./assets/images"
-import { sampleVideo } from "./assets/videos"
-import Preloader from "./components/Preloader"
 import LoadingPage from "./components/loading-page/LoadingPage"
+import Preloader from "./components/Preloader"
+import {images} from "./assets/images"
+const {bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, logoArriero, logoCohiba, logoGuantanamera, logoMontecristo, logoProdigio, logoSerrano, logoTurquino,  thumbnailArriero, thumbnailCohiba, thumbnailGuantanamera, thumbnailMontecristo, thumbnailProdigio, thumbnailSerrano, thumbnailTurquino, } = images
+import {videos} from "./assets/videos";
+const { arrieroVideo, cohibaVideo, guantanameraVideo, montecristoVideo, prodigioVideo, serranoVideo,turquinoVideo} = videos
 
 function App() {
   const {t} = useTranslation()
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    if (window.location.pathname !== "/") window.location.href = "/"
     window.addEventListener("preloadComplete", () => setIsLoading(false))
   }, [])
 
@@ -55,7 +56,7 @@ function App() {
                   banner={bannerCohiba}
                   logo={logoCohiba}
                   category={t("pages.cohiba.category")}
-                  video={sampleVideo}
+                  video={cohibaVideo}
                   videoThumbnail={thumbnailCohiba}
                   slogan={t("pages.cohiba.header")}
                   description={t("pages.cohiba.content")}
@@ -68,7 +69,7 @@ function App() {
                   banner={bannerGuantanamera}
                   logo={logoGuantanamera}
                   category={t("pages.guantanamera.category")}
-                  video={sampleVideo}
+                  video={guantanameraVideo}
                   videoThumbnail={thumbnailGuantanamera}
                   slogan={t("pages.guantanamera.header")}
                   description={t("pages.guantanamera.content")}
@@ -81,7 +82,7 @@ function App() {
                   banner={bannerMontecristo}
                   logo={logoMontecristo}
                   category={t("pages.montecristo.category")}
-                  video={sampleVideo}
+                  video={montecristoVideo}
                   videoThumbnail={thumbnailMontecristo}
                   slogan={t("pages.montecristo.header")}
                   description={t("pages.montecristo.content")}
@@ -94,7 +95,7 @@ function App() {
                   banner={bannerSerrano}
                   logo={logoSerrano}
                   category={t("pages.serrano.category")}
-                  video={sampleVideo}
+                  video={serranoVideo}
                   videoThumbnail={thumbnailSerrano}
                   slogan={t("pages.serrano.header")}
                   description={t("pages.serrano.content")}
@@ -107,7 +108,7 @@ function App() {
                   banner={bannerTurquino}
                   logo={logoTurquino}
                   category={t("pages.turquino.category")}
-                  video={sampleVideo}
+                  video={turquinoVideo}
                   videoThumbnail={thumbnailTurquino}
                   slogan={t("pages.turquino.header")}
                   description={t("pages.turquino.content")}
@@ -120,7 +121,7 @@ function App() {
                   banner={bannerArriero}
                   logo={logoArriero}
                   category={t("pages.arriero.category")}
-                  video={sampleVideo}
+                  video={arrieroVideo}
                   videoThumbnail={thumbnailArriero}
                   slogan={t("pages.arriero.header")}
                   description={t("pages.arriero.content")}
@@ -133,7 +134,7 @@ function App() {
                   banner={bannerProdigio}
                   logo={logoProdigio}
                   category={t("pages.prodigio.category")}
-                  video={sampleVideo}
+                  video={prodigioVideo}
                   videoThumbnail={thumbnailProdigio}
                   slogan={t("pages.prodigio.header")}
                   description={t("pages.prodigio.content")}

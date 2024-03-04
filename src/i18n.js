@@ -25,7 +25,7 @@ i18n
             phone: "+[53] 7208 3352-53",
             email: "clientes@cubacafe.cu",
             copyright: {
-              a: "Roasting and Marketing Company CUBACAFÉ 2023 ©️",
+              a: "Roasting and Marketing Company CUBACAFÉ 2024 ©",
               b: "All rights reserved."
             } ,
           },
@@ -174,7 +174,7 @@ i18n
             phone: "+[53] 7208 3352-53",
             email: "clientes@cubacafe.cu",
             copyright: {
-              a: "Empresa de Torrefacción y Comercialización CUBACAFÉ 2023 ©️",
+              a: "Empresa de Torrefacción y Comercialización CUBACAFÉ 2024 ©",
               b: "Todos los derechos reservados."
             } ,
           },

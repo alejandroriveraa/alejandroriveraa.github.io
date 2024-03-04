@@ -4,7 +4,8 @@ import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {BRAND_LINKS, SEAL_LINKS} from "../../utils";
 import AppImage from "../app-image/AppImage";
-import { iconArrowDownWhite } from "../../assets/images";
+import { images } from "../../assets/images";
+const {iconArrowDownWhite} = images
 
 function NavigationPanel() {
   const {t} = useTranslation()

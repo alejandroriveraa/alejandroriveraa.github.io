@@ -1,4 +1,5 @@
-import { logoCubacafe } from "../../assets/images";
+import { images } from "../../assets/images";
+const {logoCubacafe} = images
 import AppImage from "../app-image/AppImage";
 import "./LoadingPage.css"
 import "./LoadingPage.responsive.css"

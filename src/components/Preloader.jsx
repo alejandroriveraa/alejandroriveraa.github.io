@@ -2,26 +2,33 @@ import React, { useState } from "react";
 import { IMAGE_PRELOAD } from "../utils";
 
 const Preloader = () => {
-   const [preload, setPreload] = useState(IMAGE_PRELOAD)
-   const onload = function (src) {
+   const [preload, setPreload] = useState(IMAGE_PRELOAD) 
+
+   const preloadComplete = function () {
+      console.log("Preload complete");
+      window.dispatchEvent(new Event("preloadComplete"))
+   }
+   
+   const onLoad = function (e) {
+      const src = e.target.src.replace(/^https?:\/\/[^\/]+/i, "")
       if (preload.includes(src)) {
+         console.log("Preload", src);
          preload.splice(preload.indexOf(src), 1)
          setPreload(preload)
       }
-      if (preload.length === 0) {
-         window.dispatchEvent(new Event("preloadComplete"))
-      }
-   }
-   const onerror = function (e) {
-      const eTarget = e.target
-      console.log("error preloading: ", eTarget.src);
+      if (preload.length === 0) preloadComplete()
    }
    
+   const onError = function (e) {
+      const src = e.target.src.replace(/^https?:\/\/[^\/]+/i, "")
+      console.log("Error preloading", src);
+   }
+
    return (
       <div className="preloader" style={{display: "none"}}>
          {
-            IMAGE_PRELOAD.map(i => <img className="preload-image" src={i} key={i} onLoad={(e) => onload(e.target.src.replace(/^https?:\/\/[^\/]+/i, ""))} onError={(e) => onerror(e.target.src.replace(/^https?:\/\/[^\/]+/i, ""))}></img>
-            )
+            IMAGE_PRELOAD
+            .map(i => <img className="preload-image" key={i} onLoad={e => onLoad(e)} onError={e => onError(e)} src={i}></img>)
          }
       </div>
    )

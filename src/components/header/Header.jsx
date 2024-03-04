@@ -7,7 +7,8 @@ import Menu from "../menu/Menu"
 import AppImage from "../app-image/AppImage"
 import ThreeLineMenu from "../three-line-menu/ThreeLineMenu"
 import { NavLink } from "react-router-dom"
-import { logoHeader } from "../../assets/images"
+import { images } from "../../assets/images"
+const {logoHeader} = images
 
 function Header() {
   return (

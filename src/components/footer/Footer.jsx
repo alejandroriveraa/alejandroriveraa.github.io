@@ -4,7 +4,8 @@ import "./Footer.responsive.css"
 import {useTranslation} from "react-i18next"
 import AppImage from "../app-image/AppImage"
 import { NavLink } from "react-router-dom"
-import { logoFooter, logoGroup, logoInstagram } from "../../assets/images"
+import {images} from '../../assets/images';
+const { logoFooter, logoGroup, logoInstagram } = images
 
 function Footer() {
   const {t} = useTranslation()

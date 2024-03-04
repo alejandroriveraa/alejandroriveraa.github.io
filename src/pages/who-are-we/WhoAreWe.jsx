@@ -3,7 +3,8 @@ import "./WhoAreWe.css"
 import "./WhoAreWe.responsive.css"
 import { useTranslation } from "react-i18next"
 import AppImage from "../../components/app-image/AppImage"
-import { bannerWhoAreWe, logoCubacafe } from "../../assets/images"
+import {images} from "../../assets/images"
+const {bannerWhoAreWe, logoCubacafe } = images
 
 function WhoAreWe() {
   const {t} = useTranslation()

@@ -1,13 +1,14 @@
-import React from "react"
+import React, { useContext } from "react"
 import "./OurCoffee.css"
 import "./OurCoffee.responsive.css"
 import { useTranslation } from "react-i18next"
 import AppImage from "../../components/app-image/AppImage";
-import { bannerOurCoffee } from "../../assets/images";
+import { images } from "../../assets/images";
+const {bannerOurCoffee} = images
 
 function OurCoffee() {
   const {t} = useTranslation()
-
+  
   return (
     <div className="our-coffee">
         <div className="our-coffee__banner ctn">

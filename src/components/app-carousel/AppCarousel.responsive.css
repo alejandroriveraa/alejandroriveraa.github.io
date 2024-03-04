@@ -83,13 +83,13 @@
     font-size: 11px;
   }
 
-  .slide__image.mobile {
+  /* .slide__image.mobile {
     display: none;
   }
 
   .slide__image.desktop {
     display: block;
-  }
+  } */
 
   /* Cohiba */
   .cohiba .slide__content {
