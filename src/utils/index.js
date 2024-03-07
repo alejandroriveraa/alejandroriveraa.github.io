@@ -104,33 +104,33 @@ export const LANGUAGES = [
 ]
 
 export const SEAL_ITEMS = [
-  { src: itemCafeCubano, header: i18n.t('seals.cafeCubano'), path: "/seals/cafe-cubano" },
-  { src: itemTuesteCubano, header: i18n.t('seals.tuesteCubano'), path: "/seals/tueste-cubano" },
+  { src: itemCafeCubano, header: i18n.t('seals.cafeCubano'), path: "#/seals/cafe-cubano" },
+  { src: itemTuesteCubano, header: i18n.t('seals.tuesteCubano'), path: "#/seals/tueste-cubano" },
 ]
 
 export const BRAND_ITEMS = [
-  { src: itemArriero, header: i18n.t('brands.arriero'), path: "/brands/arriero" },
-  { src: itemCohiba, header: i18n.t('brands.cohiba'), path: "/brands/cohiba" },
-  { src: itemGuantanamera, header: i18n.t('brands.guantanamera'), path: "/brands/guantanamera" },
-  { src: itemMontecristo, header: i18n.t('brands.montecristo'), path: "/brands/montecristo" },
-  { src: itemProdigio, header: i18n.t('brands.prodigio'), path: "/brands/prodigio" },
-  { src: itemSerrano, header: i18n.t('brands.serrano'), path: "/brands/serrano" },
-  { src: itemTurquino, header: i18n.t('brands.turquino'), path: "/brands/turquino" },
+  { src: itemArriero, header: i18n.t('brands.arriero'), path: "#/brands/arriero" },
+  { src: itemCohiba, header: i18n.t('brands.cohiba'), path: "#/brands/cohiba" },
+  { src: itemGuantanamera, header: i18n.t('brands.guantanamera'), path: "#/brands/guantanamera" },
+  { src: itemMontecristo, header: i18n.t('brands.montecristo'), path: "#/brands/montecristo" },
+  { src: itemProdigio, header: i18n.t('brands.prodigio'), path: "#/brands/prodigio" },
+  { src: itemSerrano, header: i18n.t('brands.serrano'), path: "#/brands/serrano" },
+  { src: itemTurquino, header: i18n.t('brands.turquino'), path: "#/brands/turquino" },
 ]
 
 export const SEAL_LINKS = [
-  { to: "/seals/tueste-cubano", text: i18n.t("seals.tuesteCubano") },
-  { to: "/seals/cafe-cubano", text: i18n.t("seals.cafeCubano") },
+  { to: "#/seals/tueste-cubano", text: i18n.t("seals.tuesteCubano") },
+  { to: "#/seals/cafe-cubano", text: i18n.t("seals.cafeCubano") },
 ]
 
 export const BRAND_LINKS = [
-  { to: "/brands/cohiba", text: i18n.t("brands.cohiba") },
-  { to: "/brands/montecristo", text: i18n.t("brands.montecristo") },
-  { to: "/brands/guantanamera", text: i18n.t("brands.guantanamera") },
-  { to: "/brands/serrano", text: i18n.t("brands.serrano") },
-  { to: "/brands/turquino", text: i18n.t("brands.turquino") },
-  { to: "/brands/arriero", text: i18n.t("brands.arriero") },
-  { to: "/brands/prodigio", text: i18n.t("brands.prodigio") },
+  { to: "#/brands/cohiba", text: i18n.t("brands.cohiba") },
+  { to: "#/brands/montecristo", text: i18n.t("brands.montecristo") },
+  { to: "#/brands/guantanamera", text: i18n.t("brands.guantanamera") },
+  { to: "#/brands/serrano", text: i18n.t("brands.serrano") },
+  { to: "#/brands/turquino", text: i18n.t("brands.turquino") },
+  { to: "#/brands/arriero", text: i18n.t("brands.arriero") },
+  { to: "#/brands/prodigio", text: i18n.t("brands.prodigio") },
 ]
 
 // Randomly sorts a given array using Fisher-Yates sorting algorithm.

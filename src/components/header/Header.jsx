@@ -16,14 +16,14 @@ function Header() {
     <div className="header">
       <div className="header__content ctn">
         <div className="header__content__logo">
-          <NavLink to={"/"}>
+          <NavLink to={"#/"}>
             <AppImage src={logoHeader}/>
           </NavLink>
         </div>
         <h2 style={{marginRight: "auto", backgroundColor: "red", color: "beige", borderRadius: "3px", padding: "0 6px 0 6px"}}>DEV</h2>
         <div className="header__content__panel">
           <NavigationPanel/>
-          <LanguageSelector/>
+        <LanguageSelector/>
         </div>
         <div className="header__content__menu">
           <Menu
