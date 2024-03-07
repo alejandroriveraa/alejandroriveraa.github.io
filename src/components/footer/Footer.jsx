@@ -4,11 +4,11 @@ import "./Footer.responsive.css"
 import {useTranslation} from "react-i18next"
 import AppImage from "../app-image/AppImage"
 import { NavLink } from "react-router-dom"
-import {images} from '../../assets/images';
-const { logoFooter, logoGroup, logoInstagram } = images
+import useAdaptiveImage from "../../useAdaptiveImage"
 
 function Footer() {
   const {t} = useTranslation()
+  const { logoFooter, logoGroup, logoInstagram } = useAdaptiveImage()
 
   return (
     <div className="footer">

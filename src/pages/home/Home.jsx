@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "./Home.css"
 import "./Home.responsive.css"
 import {useTranslation} from "react-i18next"
@@ -6,12 +6,12 @@ import AppImage from "../../components/app-image/AppImage"
 import AppCarousel from "../../components/app-carousel/AppCarousel"
 import AppVideo from "../../components/app-video/AppVideo"
 import { NavLink } from "react-router-dom"
-import { images } from "../../assets/images"
-const { homeCafeCubano, homeOurCoffee, homeTuesteCubano, logoArriero, logoCohiba, logoGuantanamera, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoTurquino, thumbnailCubacafe } = images
 import { cubacafeVideo } from "../../assets/videos/index.desktop"
+import useAdaptiveImage from "../../useAdaptiveImage"
 
 function Home() {
   const {t} = useTranslation()
+  const { homeCafeCubano, homeOurCoffee, homeTuesteCubano, logoArriero, logoCohiba, logoGuantanamera, logoIslaGrande, logoMontecristo, logoProdigio, logoRegil, logoSerrano, logoTurquino, thumbnailCubacafe } = useAdaptiveImage()
 
   return (
     <div className="home">

@@ -12,14 +12,13 @@ import { useTranslation } from "react-i18next"
 import ScrollTop from "./components/scroll-top/ScrollTop"
 import LoadingPage from "./components/loading-page/LoadingPage"
 import Preloader from "./components/Preloader"
-import {images} from "./assets/images"
-const {bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, logoArriero, logoCohiba, logoGuantanamera, logoMontecristo, logoProdigio, logoSerrano, logoTurquino,  thumbnailArriero, thumbnailCohiba, thumbnailGuantanamera, thumbnailMontecristo, thumbnailProdigio, thumbnailSerrano, thumbnailTurquino, } = images
-import {videos} from "./assets/videos";
-const { arrieroVideo, cohibaVideo, guantanameraVideo, montecristoVideo, prodigioVideo, serranoVideo,turquinoVideo} = videos
+import { arrieroVideo, cohibaVideo, guantanameraVideo, montecristoVideo, prodigioVideo, serranoVideo,turquinoVideo} from "./assets/videos";
+import useAdaptiveImage from "./useAdaptiveImage"
 
 function App() {
   const {t} = useTranslation()
   const [isLoading, setIsLoading] = useState(true)
+  const {bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, logoArriero, logoCohiba, logoGuantanamera, logoMontecristo, logoProdigio, logoSerrano, logoTurquino,  thumbnailArriero, thumbnailCohiba, thumbnailGuantanamera, thumbnailMontecristo, thumbnailProdigio, thumbnailSerrano, thumbnailTurquino} = useAdaptiveImage()
 
   useEffect(() => {
     window.addEventListener("preloadComplete", () => setIsLoading(false))

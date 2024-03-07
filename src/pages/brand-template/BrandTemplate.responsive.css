@@ -1,6 +1,6 @@
 @media screen and (min-width: 425px) {
   .brand-template__banner__image {
-    width: 850px;
+    width: 768.25px;
   }  
   
   .brand-template__content__logo {
@@ -36,7 +36,7 @@
 
 @media screen and (min-width: 768px) {
   .brand-template__banner__image {
-    width: 1206px;
+    width: 1090px;
   }
   
   .brand-template__content__logo {

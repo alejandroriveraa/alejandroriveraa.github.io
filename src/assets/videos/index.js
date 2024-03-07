@@ -1,0 +1,8 @@
+export {default as arrieroVideo} from "./sample-video.mp4"
+export {default as cohibaVideo} from "./sample-video.mp4"
+export {default as cubacafeVideo} from "./sample-video.mp4"
+export {default as montecristoVideo} from "./sample-video.mp4"
+export {default as serranoVideo} from "./sample-video.mp4"
+export {default as turquinoVideo} from "./sample-video.mp4"
+export {default as guantanameraVideo} from "./sample-video.mp4"
+export {default as prodigioVideo} from "./sample-video.mp4"

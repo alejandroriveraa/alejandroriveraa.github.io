@@ -1,5 +1,5 @@
 video {
-   background-color: #0c0c0c;
+   background-color: transparent;
 }
 
 video::-webkit-media-controls-panel {

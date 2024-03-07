@@ -7,8 +7,7 @@ import Autoplay from "embla-carousel-autoplay"
 import SlideIndicator from "../slide-indicator/SlideIndicator"
 import { useTranslation } from "react-i18next"
 import { NavLink } from "react-router-dom"
-import { images } from "../../assets/images"
-const { carouselImage01, carouselImage02, carouselImage03, logoCubacafe } = images
+import useAdaptiveImage from "../../useAdaptiveImage"
 
 
 function AppCarousel() {
@@ -22,9 +21,11 @@ function AppCarousel() {
     [
       Autoplay({delay: 3000}),
     ]
-  )
+    )
   const {t} = useTranslation()
   const [selectedSlide, setSelectedSlide] = useState(0)
+  const { carouselImage01, carouselImage02, carouselImage03, logoCubacafe } = useAdaptiveImage()
+
   useEffect(() => {
     if (emblaApi) {
       emblaApi.on('select', () => {

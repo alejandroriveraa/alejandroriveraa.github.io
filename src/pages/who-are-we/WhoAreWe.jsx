@@ -3,11 +3,11 @@ import "./WhoAreWe.css"
 import "./WhoAreWe.responsive.css"
 import { useTranslation } from "react-i18next"
 import AppImage from "../../components/app-image/AppImage"
-import {images} from "../../assets/images"
-const {bannerWhoAreWe, logoCubacafe } = images
+import useAdaptiveImage from "../../useAdaptiveImage"
 
 function WhoAreWe() {
   const {t} = useTranslation()
+  const { bannerWhoAreWe, logoCubacafe} = useAdaptiveImage()
 
   return (
     <div className="who-are-we">

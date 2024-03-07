@@ -4,13 +4,13 @@ import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {BRAND_LINKS, SEAL_LINKS} from "../../utils";
 import AppImage from "../app-image/AppImage";
-import { images } from "../../assets/images";
-const {iconArrowDownWhite} = images
+import useAdaptiveImage from "../../useAdaptiveImage";
 
 function NavigationPanel() {
   const {t} = useTranslation()
   const activeLinkStyle = {opacity: "50%"};
   const activeLinkStyleCallback = ({isActive}) => isActive ? activeLinkStyle: null
+  const {iconArrowDownWhite} = useAdaptiveImage()
 
   return (
     <div className="navigation-panel">

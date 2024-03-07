@@ -15,7 +15,7 @@
 }
 
 .slide {
-  flex: 0 0 891.5px;
+  flex: 0 0 755.92px;
   min-width: 0;
   position: relative;
 }
@@ -23,10 +23,6 @@
 .slide__image {
   width: 100%;
 }
-
-/* .slide__image.desktop {
-  display: none;
-} */
 
 .slide__content {
   position: absolute;
