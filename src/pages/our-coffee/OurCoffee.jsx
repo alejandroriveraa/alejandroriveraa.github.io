@@ -3,7 +3,7 @@ import "./OurCoffee.css"
 import "./OurCoffee.responsive.css"
 import { useTranslation } from "react-i18next"
 import AppImage from "../../components/app-image/AppImage";
-import useAdaptiveImage from "../../useAdaptiveImage";
+import useAdaptiveImage from "../../hooks/useAdaptiveImage";
 
 function OurCoffee() {
   const {t} = useTranslation()

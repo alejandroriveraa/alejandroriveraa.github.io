@@ -7,7 +7,7 @@ import Autoplay from "embla-carousel-autoplay"
 import SlideIndicator from "../slide-indicator/SlideIndicator"
 import { useTranslation } from "react-i18next"
 import { NavLink } from "react-router-dom"
-import useAdaptiveImage from "../../useAdaptiveImage"
+import useAdaptiveImage from "../../hooks/useAdaptiveImage"
 
 
 function AppCarousel() {

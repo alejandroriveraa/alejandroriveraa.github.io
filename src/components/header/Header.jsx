@@ -7,7 +7,7 @@ import Menu from "../menu/Menu"
 import AppImage from "../app-image/AppImage"
 import ThreeLineMenu from "../three-line-menu/ThreeLineMenu"
 import { NavLink } from "react-router-dom"
-import useAdaptiveImage from "../../useAdaptiveImage"
+import useAdaptiveImage from "../../hooks/useAdaptiveImage"
 
 function Header() {
   const {logoHeader} = useAdaptiveImage()

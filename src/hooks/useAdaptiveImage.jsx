@@ -6,8 +6,8 @@ const useAdaptiveImage = () => {
 
    const loadImages = async () => {
       return mobile
-      ? await import("./assets/images/index.mobile")
-      : await import("./assets/images/index.desktop")
+      ? await import("../assets/images/index.mobile")
+      : await import("../assets/images/index.desktop")
    }
 
    useEffect(() => {

@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {BRAND_LINKS, SEAL_LINKS} from "../../utils";
 import AppImage from "../app-image/AppImage";
-import useAdaptiveImage from "../../useAdaptiveImage";
+import useAdaptiveImage from "../../hooks/useAdaptiveImage";
 
 function NavigationPanel() {
   const {t} = useTranslation()

@@ -3,7 +3,7 @@ import "./WhoAreWe.css"
 import "./WhoAreWe.responsive.css"
 import { useTranslation } from "react-i18next"
 import AppImage from "../../components/app-image/AppImage"
-import useAdaptiveImage from "../../useAdaptiveImage"
+import useAdaptiveImage from "../../hooks/useAdaptiveImage"
 
 function WhoAreWe() {
   const {t} = useTranslation()

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IMAGE_PRELOAD } from "../utils";
+import { IMAGE_PRELOAD } from "../../utils";
 
 const Preloader = () => {
    const [preload, setPreload] = useState(IMAGE_PRELOAD)

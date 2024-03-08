@@ -6,8 +6,8 @@ import AppImage from "../../components/app-image/AppImage"
 import AppCarousel from "../../components/app-carousel/AppCarousel"
 import AppVideo from "../../components/app-video/AppVideo"
 import { NavLink } from "react-router-dom"
-import { cubacafeVideo } from "../../assets/videos/index.desktop"
-import useAdaptiveImage from "../../useAdaptiveImage"
+import { cubacafeVideo } from "../../assets/videos"
+import useAdaptiveImage from "../../hooks/useAdaptiveImage"
 
 function Home() {
   const {t} = useTranslation()

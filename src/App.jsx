@@ -11,9 +11,9 @@ import SealTemplate from "./pages/seal-template/SealTemplate"
 import { useTranslation } from "react-i18next"
 import ScrollTop from "./components/scroll-top/ScrollTop"
 import LoadingPage from "./components/loading-page/LoadingPage"
-import Preloader from "./components/Preloader"
+import Preloader from "./components/preloader/Preloader"
 import { arrieroVideo, cohibaVideo, guantanameraVideo, montecristoVideo, prodigioVideo, serranoVideo,turquinoVideo} from "./assets/videos";
-import useAdaptiveImage from "./useAdaptiveImage"
+import useAdaptiveImage from "./hooks/useAdaptiveImage"
 
 function App() {
   const {t} = useTranslation()

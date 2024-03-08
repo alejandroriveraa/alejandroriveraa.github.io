@@ -1,4 +1,4 @@
-import useAdaptiveImage from "../../useAdaptiveImage";
+import useAdaptiveImage from "../../hooks/useAdaptiveImage";
 import AppImage from "../app-image/AppImage";
 import "./LoadingPage.css"
 import "./LoadingPage.responsive.css"

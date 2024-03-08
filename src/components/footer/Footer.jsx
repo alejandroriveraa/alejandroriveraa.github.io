@@ -4,7 +4,7 @@ import "./Footer.responsive.css"
 import {useTranslation} from "react-i18next"
 import AppImage from "../app-image/AppImage"
 import { NavLink } from "react-router-dom"
-import useAdaptiveImage from "../../useAdaptiveImage"
+import useAdaptiveImage from "../../hooks/useAdaptiveImage"
 
 function Footer() {
   const {t} = useTranslation()
