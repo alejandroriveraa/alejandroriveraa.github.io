@@ -16,7 +16,7 @@ function Header() {
     <div className="header">
       <div className="header__content ctn">
         <div className="header__content__logo">
-          <NavLink to={"#/"}>
+          <NavLink to={"/"}>
             <AppImage src={logoHeader}/>
           </NavLink>
         </div>

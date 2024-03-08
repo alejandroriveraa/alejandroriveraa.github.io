@@ -16,28 +16,28 @@ function NavigationPanel() {
     <div className="navigation-panel">
       <div className="navigation-panel__item">
         <NavLink to="/" style={activeLinkStyleCallback}>
-          {t("header.a").toUpperCase()}
+          <p>{t("header.a").toUpperCase()}</p>
         </NavLink>
       </div>
       <div className="navigation-panel__item">
         <NavLink to="/who-are-we" style={activeLinkStyleCallback}>
-          {t("header.b").toUpperCase()}
+          <p>{t("header.b").toUpperCase()}</p>
         </NavLink>
       </div>
       <div className="navigation-panel__item">
         <NavLink to="/our-coffee" style={activeLinkStyleCallback}>
-          {t("header.c").toUpperCase()}
+          <p>{t("header.c").toUpperCase()}</p>
         </NavLink>
       </div>
       <Menu 
       main={<p>{t("header.d").toUpperCase()}</p>} 
       side={<AppImage src={iconArrowDownWhite}/>} 
-      bodyItems={SEAL_LINKS.map(i => <NavLink to={i.to} style={activeLinkStyleCallback}>{i.text.toUpperCase()}</NavLink>)}
+      bodyItems={SEAL_LINKS.map(i => <NavLink to={i.to} key={i} style={activeLinkStyleCallback}><p>{i.text.toUpperCase()}</p></NavLink>)}
       />
       <Menu 
       main={<p>{t("header.e").toUpperCase()}</p>} 
       side={<AppImage src={iconArrowDownWhite}/>}
-      bodyItems={BRAND_LINKS.map(i => <NavLink to={i.to} style={activeLinkStyleCallback}>{i.text.toUpperCase()}</NavLink>)}
+      bodyItems={BRAND_LINKS.map(i => <NavLink to={i.to} key={i} style={activeLinkStyleCallback}><p>{i.text.toUpperCase()}</p></NavLink>)}
       />
     </div>
   )

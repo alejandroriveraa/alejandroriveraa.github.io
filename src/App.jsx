@@ -30,26 +30,26 @@ function App() {
       <div className="app" style={isLoading ? {display: "none"} : null}>
         <HashRouter>
           <Routes>
-            <Route path="#/" element={<OuterLayout/>}>
-              <Route path="#/" element={<Home/>}/>
+            <Route path="/" element={<OuterLayout/>}>
+              <Route path="/" element={<Home/>}/>
               <Route path="*" element={<InnerLayout/>}>
-                <Route path="#who-are-we" element={<WhoAreWe/>}/>
-                <Route path="#our-coffee" element={<OurCoffee/>}/>
-                <Route path="#seals/tueste-cubano" element={
+                <Route path="who-are-we" element={<WhoAreWe/>}/>
+                <Route path="our-coffee" element={<OurCoffee/>}/>
+                <Route path="seals/tueste-cubano" element={
                   <SealTemplate
                   banner={bannerTuesteCubano}
                   header={t("pages.stc.header")}
                   content={t("pages.stc.content")}
                   />
                 }/>
-                <Route path="#seals/cafe-cubano" element={
+                <Route path="seals/cafe-cubano" element={
                   <SealTemplate
                   banner={bannerCafeCubano}
                   header={t("pages.scc.header")}
                   content={t("pages.scc.content")}
                   />
                 }/>
-                <Route path="#brands/cohiba" element={
+                <Route path="brands/cohiba" element={
                   <BrandTemplate 
                   backgroundColor={"--color-raisin-black"}
                   banner={bannerCohiba}
@@ -62,7 +62,7 @@ function App() {
                   format={t("pages.cohiba.format")}
                   />
                 }/>
-                <Route path="#brands/guantanamera" element={
+                <Route path="brands/guantanamera" element={
                   <BrandTemplate 
                   backgroundColor={"--color-persian-plum"}
                   banner={bannerGuantanamera}
@@ -75,7 +75,7 @@ function App() {
                   format={t("pages.guantanamera.format")}
                   />
                 }/>
-                <Route path="#brands/montecristo" element={
+                <Route path="brands/montecristo" element={
                   <BrandTemplate
                   backgroundColor={"--color-deep-taupe"}
                   banner={bannerMontecristo}
@@ -88,7 +88,7 @@ function App() {
                   format={t("pages.montecristo.format")}
                   />
                 }/>
-                <Route path="#brands/serrano" element={
+                <Route path="brands/serrano" element={
                   <BrandTemplate
                   backgroundColor={"--color-dark-raspberry"}
                   banner={bannerSerrano}
@@ -101,7 +101,7 @@ function App() {
                   format={t("pages.serrano.format")}
                   />
                 }/>
-                <Route path="#brands/turquino" element={
+                <Route path="brands/turquino" element={
                   <BrandTemplate
                   backgroundColor={"--color-stpatricks-blue"}
                   banner={bannerTurquino}
@@ -114,7 +114,7 @@ function App() {
                   format={t("pages.turquino.format")}
                   />
                 }/>
-                <Route path="#brands/arriero" element={
+                <Route path="brands/arriero" element={
                   <BrandTemplate
                   backgroundColor={"--color-persian-plum"}
                   banner={bannerArriero}
@@ -127,7 +127,7 @@ function App() {
                   format={t("pages.arriero.format")}
                   />
                 }/>
-                <Route path="#brands/prodigio" element={
+                <Route path="brands/prodigio" element={
                   <BrandTemplate
                   backgroundColor={"--color-old-burgundy"}
                   banner={bannerProdigio}
