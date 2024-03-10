@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./Header.css"
 import "./Header.responsive.css"
 import NavigationPanel from "../navigation-panel/NavigationPanel"
@@ -11,6 +11,15 @@ import useAdaptiveImage from "../../hooks/useAdaptiveImage"
 
 function Header() {
   const {logoHeader} = useAdaptiveImage()
+  const [flagVisible, setFlagVisible] = useState(true)
+  const flagStyle = {
+    display: flagVisible ? "block" : "none",
+    marginRight: "auto", 
+    backgroundColor: "darkred", 
+    color: "beige", 
+    borderRadius: "3px", 
+    padding: "0 6px 0 6px"
+  }
 
   return (
     <div className="header">
@@ -20,7 +29,7 @@ function Header() {
             <AppImage src={logoHeader}/>
           </NavLink>
         </div>
-        <h2 style={{marginRight: "auto", backgroundColor: "red", color: "beige", borderRadius: "3px", padding: "0 6px 0 6px"}}>DEV</h2>
+        <h3 onClick={() => {setFlagVisible(!flagVisible)}} style={flagStyle}>DEV</h3>
         <div className="header__content__panel">
           <NavigationPanel/>
         <LanguageSelector/>
