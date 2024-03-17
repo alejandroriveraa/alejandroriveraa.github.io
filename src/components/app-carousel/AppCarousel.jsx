@@ -15,11 +15,11 @@ function AppCarousel() {
     {
       loop: true,
       watchDrag: false,
-      startIndex: 0,
+      startIndex: 1,
       duration: 40,
     }, 
     [
-      Autoplay({delay: 3000}),
+      // Autoplay({delay: 3000}),
     ]
     )
   const {t} = useTranslation()

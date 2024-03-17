@@ -52,11 +52,10 @@
 }
 
 .header__content__menu .menu__header__side {
-  width: 8px;
+  width: 9px;
 }
 
-.header__content__menu a,
-.header__content__menu .menu__header {
+.header__content__menu a {
   padding: 8px;
 }
 

@@ -24,9 +24,6 @@ function App() {
     window.addEventListener("preloadComplete", () => {
       setIsLoading(false)
     })
-    return () => {
-      window.removeEventListener("preloadComplete")
-    }
   }, [])
 
   return (
