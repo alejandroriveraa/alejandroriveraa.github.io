@@ -71,7 +71,8 @@
 
 @media screen and (min-width: 768px) {
   .slide {
-    flex: 0 0 889px;
+    /* h 563.66 */
+    flex: 0 0 1091.1px;
   }
   
   .cohiba .slide__content__link a, 
@@ -148,7 +149,8 @@
 
 @media screen and (min-width: 1024px) {
   .slide {
-    flex: 0 0 1565.3px;
+    /* h 702.32 */
+    flex: 0 0 1603.42px;
   }
 
   .cohiba .slide__content__link a, 
