@@ -21,7 +21,12 @@ function App() {
   const {bannerArriero, bannerCafeCubano, bannerCohiba, bannerGuantanamera, bannerMontecristo, bannerProdigio, bannerSerrano, bannerTuesteCubano, bannerTurquino, logoArriero, logoCohiba, logoGuantanamera, logoMontecristo, logoProdigio, logoSerrano, logoTurquino,  thumbnailArriero, thumbnailCohiba, thumbnailGuantanamera, thumbnailMontecristo, thumbnailProdigio, thumbnailSerrano, thumbnailTurquino} = useAdaptiveImage()
 
   useEffect(() => {
-    window.addEventListener("preloadComplete", () => setIsLoading(false))
+    window.addEventListener("preloadComplete", () => {
+      setIsLoading(false)
+    })
+    return () => {
+      window.removeEventListener("preloadComplete")
+    }
   }, [])
 
   return (
