@@ -55,7 +55,8 @@
   width: 9px;
 }
 
-.header__content__menu a {
+.header__content__menu a,
+.header__content__menu .menu__header p {
   padding: 8px;
 }
 

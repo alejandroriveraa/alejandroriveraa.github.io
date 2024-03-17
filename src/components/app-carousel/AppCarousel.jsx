@@ -19,7 +19,7 @@ function AppCarousel() {
       duration: 40,
     }, 
     [
-      // Autoplay({delay: 3000}),
+      Autoplay({delay: 3000}),
     ]
     )
   const {t} = useTranslation()
