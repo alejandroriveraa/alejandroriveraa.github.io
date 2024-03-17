@@ -11,15 +11,6 @@ import useAdaptiveImage from "../../hooks/useAdaptiveImage"
 
 function Header() {
   const {logoHeader} = useAdaptiveImage()
-  const [flagVisible, setFlagVisible] = useState(true)
-  const flagStyle = {
-    display: flagVisible ? "block" : "none",
-    marginRight: "auto", 
-    backgroundColor: "darkred", 
-    color: "beige", 
-    borderRadius: "3px", 
-    padding: "0 6px 0 6px"
-  }
 
   return (
     <div className="header">
@@ -29,10 +20,9 @@ function Header() {
             <AppImage src={logoHeader}/>
           </NavLink>
         </div>
-        <h3 onClick={() => {setFlagVisible(!flagVisible)}} style={flagStyle}>DEV</h3>
         <div className="header__content__panel">
           <NavigationPanel/>
-        <LanguageSelector/>
+          <LanguageSelector/>
         </div>
         <div className="header__content__menu">
           <Menu

@@ -11,8 +11,8 @@ const Preloader = () => {
    
    const onLoad = function (e) {
       const src = e.target.src.replace(/^https?:\/\/[^\/]+/i, "")
+      console.log("Preload", src)
       if (preload.includes(src)) {
-         console.log("Preload", src)
          preload.splice(preload.indexOf(src), 1)
          setPreload(preload)
       }
@@ -23,6 +23,10 @@ const Preloader = () => {
       const src = e.target.src.replace(/^https?:\/\/[^\/]+/i, "")
       console.log("Error preloading", src)
    }
+
+   useEffect(() => {
+      console.log(preload);
+   }, [])
 
    return (
       <div className="preloader" style={{display: "none"}}>
