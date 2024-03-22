@@ -30,7 +30,7 @@ function App() {
     <>
       <LoadingPage isVisible={isLoading}/>
       <div className="app" style={isLoading ? {display: "none"} : null}>
-        <HashRouter>
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<OuterLayout/>}>
               <Route path="/" element={<Home/>}/>
@@ -148,7 +148,7 @@ function App() {
           </Routes>
           <ScrollTop/>
           <Preloader/>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     </>
     )
