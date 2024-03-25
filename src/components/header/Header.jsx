@@ -14,17 +14,17 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="header__content ctn">
-        <div className="header__content__logo">
+      <div className="header__ctn ctn">
+        <div className="header__logo">
           <NavLink to={"/"}>
             <AppImage src={logoHeader}/>
           </NavLink>
         </div>
-        <div className="header__content__panel">
+        <div className="header__panel">
           <NavigationPanel/>
           <LanguageSelector/>
         </div>
-        <div className="header__content__menu">
+        <div className="header__menu">
           <Menu
           main={null}
           side={<ThreeLineMenu/>}
