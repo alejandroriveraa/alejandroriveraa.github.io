@@ -1,4 +1,8 @@
-.menu__header {
+.menu {
+  position: relative;
+}
+
+.menu__head {
   display: flex;
   align-items: center;
 }
