@@ -10,25 +10,26 @@ function LanguageSelector() {
  }
 
  useEffect(() => {
-  var element = document.getElementById('langSelectorItem');
-
-  // For touch devices
-  element.addEventListener('touchstart', function() {
-    element.classList.add('active');
-  });
-
-  element.addEventListener('touchend', function() {
-    element.classList.remove('active');
-  });
-
-  // For desktop devices
-  element.addEventListener('mousedown', function() {
-    element.classList.add('active');
-  });
-
-  element.addEventListener('mouseup', function() {
-    element.classList.remove('active');
-  });
+  var elements = document.getElementsByClassName('language-selector__item');
+  for (let i = 0; i < elements.length; i++) {
+    // For touch devices
+    elements[i].addEventListener('touchstart', function() {
+      elements[i].classList.add('active');
+    });
+  
+    elements[i].addEventListener('touchend', function() {
+      elements[i].classList.remove('active');
+    });
+  
+    // For desktop devices
+    elements[i].addEventListener('mousedown', function() {
+      elements[i].classList.add('active');
+    });
+  
+    elements[i].addEventListener('mouseup', function() {
+      elements[i].classList.remove('active');
+    });
+  }
  }, [])
 
   return (
