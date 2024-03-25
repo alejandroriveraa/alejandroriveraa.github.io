@@ -41,9 +41,9 @@ function Menu({main, side, bodyItems}) {
   
   return (
     <div className="menu" ref={menuRef}>
-      <div className="menu__head" onMouseEnter={openMenuOnHover} onClick={() => setMenuOn(!menuOn)}>
-        {main && (<div className="menu__head__main">{main}</div>)} 
-        {side && (<div className="menu__head__side">{side}</div>)}
+      <div className="menu__header" onMouseEnter={openMenuOnHover} onClick={() => setMenuOn(!menuOn)}>
+        {main && (<div className="menu__header__main">{main}</div>)} 
+        {side && (<div className="menu__header__side">{side}</div>)}
       </div>
       {
         menuOn && (

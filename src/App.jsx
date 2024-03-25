@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import OuterLayout from "./layouts/outer-layout/OuterLayout"
 import InnerLayout from "./layouts/inner-layout/InnerLayout"
 import NotFoundErrorPage from "./error-pages/not-found-error/NotFoundErrorPage"
@@ -30,7 +30,7 @@ function App() {
     <>
       <LoadingPage isVisible={isLoading}/>
       <div className="app" style={isLoading ? {display: "none"} : null}>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<OuterLayout/>}>
               <Route path="/" element={<Home/>}/>
@@ -148,7 +148,7 @@ function App() {
           </Routes>
           <ScrollTop/>
           <Preloader/>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </>
     )
